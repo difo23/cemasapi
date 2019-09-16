@@ -4,32 +4,15 @@ let Schema = mongoose.Schema;
 
 let cursoSchema = new Schema({
 	_id: Schema.Types.ObjectId,
-	codigo: {
+	codigo_curso: {
 		type: String,
 		unique: true
-	},	
-	centro: {
+	},
+	seccion: {
 		type: String
 	},
-	estudiantes_inscritos: [
-		{
-			type: Schema.Types.ObjectId,
-			ref: 'Estudiante'
-		}
-	],
-	profesores: [
-		{
-			type: Schema.Types.ObjectId,
-			ref: 'Profesor'
-		}
-	],
-	titular: {
-		type: Schema.Types.ObjectId,
-		ref: 'Profesor'
-	},
-
-	periodo: {
-		type: String
+	grado: {
+		type: Number
 	},
 	modalidad: {
 		type: String,
@@ -41,14 +24,17 @@ let cursoSchema = new Schema({
 	},
 	asignaturas: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Asignatura'
+			type: String
 		}
 	],
+	especialidad: {
+		type: String,
+		required: true
+	},
 	updated: {
 		type: Date,
 		default: Date.now
 	}
 });
 
-module.exports = mongoose.model('Curso', cursoSchema);
+module.exports = mongoose.model('cursos', cursoSchema);
