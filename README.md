@@ -1,2 +1,8 @@
-cemascalificacionesapi
-Introduccion a la interfaz cemas
+
+Introduccion API cemas
+
+Crear documento .env con variables locales:
+
+
+
+
