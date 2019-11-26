@@ -8,8 +8,7 @@ let calificacionGeneralSchema = new Schema({
 		type: String
 	},
 	estado: {
-		type: Boolean,
-		default: true
+		type: String
 	},
 	estudiante_calificado: {
 		type: String

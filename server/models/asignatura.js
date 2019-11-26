@@ -25,8 +25,7 @@ let asignaturaSchema = new Schema({
 		default: 'GENERAL'
 	},
 	estado: {
-		type: Boolean,
-		default: true
+		type: String
 	},
 	horas_semanales: {
 		type: Number

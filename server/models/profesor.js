@@ -33,8 +33,7 @@ let profesorSchema = new Schema({
 		type: String
 	},
 	estado: {
-		type: Boolean,
-		default: true
+		type: String
 	},
 
 	updated: {

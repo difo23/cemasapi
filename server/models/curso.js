@@ -17,8 +17,7 @@ let cursoSchema = new Schema({
 		type: String
 	},
 	estado: {
-		type: Boolean,
-		default: true
+		type: String
 	},
 	asignaturas: [
 		{
