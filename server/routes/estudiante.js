@@ -43,7 +43,7 @@ app.post('/estudiante', (req, res) => {
 		apellido: body.apellido,
 		img: body.img,
 		sexo: body.sexo,
-		fecha_nacimiento: new Date(body.fecha_nacimiento),
+		fecha_nacimiento: body.fecha_nacimiento,
 		telefono_tutor: body.telefono_tutor,
 		nombre_tutor: body.nombre_tutor,
 		codigo_curso_activo: body.codigo_curso_activo,

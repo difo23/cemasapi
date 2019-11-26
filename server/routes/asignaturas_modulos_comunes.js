@@ -35,7 +35,8 @@ app.post('/asignaturas_modulos_comunes', (req, res) => {
 	let body = req.body;
 	let id = mongoose.Types.ObjectId();
 	let asignaturas_modulos_comunes = new Asignaturas_modulos_comunes({
-		_id: id,
+        _id: id,
+        codigo: body.codigo,
 		nombre: body.nombre,
 		horas_semanales: body.horas_semanales,
 		horas_anos: body.horas_anos,

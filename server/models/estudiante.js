@@ -6,8 +6,7 @@ let estudianteSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	cursos: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Curso'
+			type: String
 		}
 	],
 	nombre: {
@@ -23,12 +22,10 @@ let estudianteSchema = new Schema({
 	},
 	codigo_curso_activo: { type: String },
 	email: {
-		type: String,
-		unique: true
+		type: String
 	},
 	img: {
-		type: String,
-		required: false
+		type: String
 	},
 	telefono_tutor: {
 		type: String
@@ -38,14 +35,13 @@ let estudianteSchema = new Schema({
 		default: true
 	},
 	nombre_tutor: {
-		type: String,
-		required: false
+		type: String
 	},
 	updated: {
 		type: Date,
 		default: Date.now
 	},
-	fecha_nacimiento: { type: Date },
+	fecha_nacimiento: { type: String },
 	sexo: { type: String },
 	edad: {
 		type: Number,
@@ -53,9 +49,7 @@ let estudianteSchema = new Schema({
 		max: 25
 	},
 	RNE: {
-		type: String,
-		required: true,
-		unique: true
+		type: String
 	}
 });
 

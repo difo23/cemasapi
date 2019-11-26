@@ -7,8 +7,7 @@ let asignaturas_modulos_comunesSchema = new Schema({
 
 	codigo: {
 			type: String,
-			ref: 'Codigo',			
-			required: true
+			ref: 'Codigo'
 		},
 
 	nombre: {

@@ -7,8 +7,7 @@ let asignaturas_academicasSchema = new Schema({
 
 	codigo: {
 			type: String,
-			ref: 'Codigo',			
-			required: true
+			ref: 'Codigo'
 		},
 
 	nombre: {
@@ -17,24 +16,24 @@ let asignaturas_academicasSchema = new Schema({
 		},
 
 	horas_semanales: {
-		type: Number,
+		type: Number
 	},
 
 	horas_anos: {
-		type: Number,
+		type: Number
 	},
 
 	grado: {
-		type: Number,
+		type: Number
 	},
 
 	cursos_profesor: [{}] ,
 
 	estado: {
-		type: Boolean,
+		type: Boolean
 	},
 	modalidad: {
-		type: String,
+		type: String
 	}
 });
 
