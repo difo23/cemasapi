@@ -10,5 +10,5 @@ app.use(require('./profesor'));
 app.use(require('./asignatura'));
 app.use(require('./curso'));
 app.use(require('./asignaturas_academicas'));
-
+app.use(require('./asignaturas_modulos_comunes'));
 module.exports = app;
