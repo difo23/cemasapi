@@ -5,8 +5,7 @@ let Schema = mongoose.Schema;
 let cursoSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	codigo_curso: {
-		type: String,
-		unique: true
+		type: String
 	},
 	seccion: {
 		type: String
@@ -15,8 +14,7 @@ let cursoSchema = new Schema({
 		type: Number
 	},
 	modalidad: {
-		type: String,
-		required: true
+		type: String
 	},
 	estado: {
 		type: Boolean,
@@ -28,8 +26,7 @@ let cursoSchema = new Schema({
 		}
 	],
 	especialidad: {
-		type: String,
-		required: true
+		type: String
 	},
 	updated: {
 		type: Date,

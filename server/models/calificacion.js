@@ -5,21 +5,17 @@ let Schema = mongoose.Schema;
 let calificacionSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	curso: {
-		type: Schema.Types.ObjectId,
-		ref: 'Curso'
+		type: String
 	},
 	periodo: { type: String },
 	profesor: {
-		type: Schema.Types.ObjectId,
-		ref: 'Profesor'
+		type: String
 	},
 	asignatura: {
-		type: Schema.Types.ObjectId,
-		ref: 'Asignatura'
+		type: String
 	},
 	modalidad: {
-		type: String,
-		required: true
+		type: String
 	},
 	estado: {
 		type: Boolean,
@@ -27,32 +23,27 @@ let calificacionSchema = new Schema({
 	},
 	estudiantes_calificados: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Estudiante'
+			type: String
 		}
 	],
 	calificaciones_generales: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'CalificacionGeneral'
+			type: String
 		}
 	],
 	calificaciones_extraordinarias: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'CalificacionExtraordinaria'
+			type: String
 		}
 	],
 	calificaciones_completivas: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'CalificacionCompletiva'
+			type: String
 		}
 	],
 	calificaciones_tecnicas: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'CalificacionTecnica'
+			type: String
 		}
 	],
 	updated: {

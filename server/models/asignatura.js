@@ -5,24 +5,20 @@ let Schema = mongoose.Schema;
 let asignaturaSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	codigo_asignatura: {
-		type: String,
-		unique: true
+		type: String
 	},
 	cursos: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Curso'
+			type: String
 		}
 	],
 	profesores: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Profesor'
+			type: String
 		}
 	],
 	modalidad: {
-		type: String,
-		required: true
+		type: String
 	},
 	codigo_tecnico: {
 		type: String,

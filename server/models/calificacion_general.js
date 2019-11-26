@@ -5,16 +5,14 @@ let Schema = mongoose.Schema;
 let calificacionGeneralSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	calificacion: {
-		type: Schema.Types.ObjectId,
-		ref: 'Calificacion'
+		type: String
 	},
 	estado: {
 		type: Boolean,
 		default: true
 	},
 	estudiante_calificado: {
-		type: Schema.Types.ObjectId,
-		ref: 'Estudiante'
+		type: String
 	},
 	numero: { type: Number },
 	ago_sept_oct: { type: Number },

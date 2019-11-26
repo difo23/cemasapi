@@ -21,7 +21,6 @@
 	"author": "Lizandro Ramirez",
 	"license": "ISC",
 	"dependencies": {
-		"atob": "^2.1.2",
 		"bcrypt": "^3.0.6",
 		"body-parse": "^0.1.0",
 		"body-parser": "^1.19.0",
@@ -29,13 +28,9 @@
 		"express": "^4.17.1",
 		"express-fileupload": "^1.1.5",
 		"google-auth-library": "^4.2.0",
-		"html2canvas": "^1.0.0-rc.4",
-		"jpeg-js": "^0.3.6",
 		"jsonwebtoken": "^8.5.1",
-		"jspdf": "^1.5.3",
 		"mongoose": "^5.5.13",
 		"mongoose-unique-validator": "^2.0.3",
-		"pdfkit": "^0.10.0",
 		"underscore": "^1.9.1"
 	}
 }
