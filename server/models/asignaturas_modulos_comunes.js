@@ -6,43 +6,41 @@ let asignaturas_modulos_comunesSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 
 	codigo: {
-			type: String,
-			ref: 'Codigo'
+			type: String
 		},
 
 	nombre: {
-			type: String,
-			ref: 'Nombre'
+			type: String
 		},
 
 	horas_semanales: {
-		type: Number,
+		type: Number
 	},
 
 	horas_anos: {
-		type: Number,
+		type: Number
 	},
 
 	grado: {
-		type: Number,
+		type: Number
 	},
 
 	cursos_profesor: [{}] ,
 
 	estado: {
-		type: Boolean,
+		type: Boolean
 	},
 	modalidad: {
-		type: String,
+		type: String
     },
     nivel: {
-		type: Number,
+		type: Number
 	},
     unidad_competencia: {
-		type: String,
+		type: String
 	},
     ra: {
-		type: Number,
+		type: Number
 	},
     ra_porcentaje: [{}] ,
 });

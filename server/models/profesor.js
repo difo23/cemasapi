@@ -6,14 +6,12 @@ let profesorSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	cursos_impartidos: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Curso'
+			type: String
 		}
 	],
 	asignaturas_impartidas: [
 		{
-			type: Schema.Types.ObjectId,
-			ref: 'Asignaturas'
+			type: String
 		}
 	],
 	nombre: {
@@ -23,17 +21,13 @@ let profesorSchema = new Schema({
 		type: String
 	},
 	codigo_maestro: {
-		type: String,
-		required: [ true, 'El es necesario' ],
-		unique: true
+		type: String
 	},
 	email: {
-		type: String,
-		unique: true
+		type: String
 	},
 	img: {
-		type: String,
-		required: false
+		type: String
 	},
 	telefono: {
 		type: String

@@ -6,13 +6,11 @@ let asignaturas_academicasSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 
 	codigo: {
-			type: String,
-			ref: 'Codigo'
+			type: String
 		},
 
 	nombre: {
-			type: String,
-			ref: 'Nombre'
+			type: String
 		},
 
 	horas_semanales: {
