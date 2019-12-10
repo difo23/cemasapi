@@ -34,6 +34,8 @@ app.get('/asignaturas_modulos_comunes', (req, res) => {
 app.post('/asignaturas_modulos_comunes', (req, res) => {
 	let body = req.body;
 	let id = mongoose.Types.ObjectId();
+	var myValue = body.estado;
+    var estado = myValue == 'true';
 	let asignaturas_modulos_comunes = new Asignaturas_modulos_comunes({
         _id: id,
         codigo: body.codigo,
@@ -42,7 +44,7 @@ app.post('/asignaturas_modulos_comunes', (req, res) => {
 		horas_anos: body.horas_anos,
 		grado: body.grado,
 		cursos_profesor: body.cursos_profesor,
-		estado: body.estado,
+		estado: estado,
 		modalidad: body.modalidad,
 		nivel: body.nivel,
 		unidad_competencia: body.unidad_competencia,

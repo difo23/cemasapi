@@ -10,7 +10,7 @@ app.get('/estudiante', (req, res) => {
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-	Estudiante.find({ estado: true }, 'nombre apellido RNE estado matricula')
+	Estudiante.find({ estado: true }, 'cursos estado nombre email RNE matricula apellido img sexo fecha_nacimiento telefono_tutor nombre_tutor edad ')
 		.skip(Number(from))
 		.limit(Number(limite))
 		.exec((err, estudiantes) => {
@@ -36,18 +36,10 @@ app.post('/estudiante', (req, res) => {
 	let id = mongoose.Types.ObjectId();
 	let estudiante = new Estudiante({
 		_id: id,
+		cursos: body.cursos,
+		estado: estado,
 		nombre: body.nombre,
-		email: body.email,
-		RNE: body.rne,
-		matricula: body.matricula,
-		apellido: body.apellido,
-		img: body.img,
-		sexo: body.sexo,
-		fecha_nacimiento: body.fecha_nacimiento,
-		telefono_tutor: body.telefono_tutor,
-		nombre_tutor: body.nombre_tutor,
-		codigo_curso_activo: body.codigo_curso_activo,
-		edad: body.edad
+		
 	});
 
 	estudiante.save((err, estudiantedb) => {

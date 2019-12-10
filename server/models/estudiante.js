@@ -13,43 +13,38 @@ let estudianteSchema = new Schema({
 		type: String
 		//required: [ true, 'el nombre es necesario' ]
 	},
-	apellido: {
-		type: String
+	email: {
+		type: Boolean
 	},
-	matricula: {
+	RNE: {
 		type: String
 		//required: [ true, 'El matricula es necesario' ]
 	},
-	codigo_curso_activo: { type: String },
-	email: {
+	matricula: {
+		 type: String 
+	},
+	apellido: {
 		type: String
 	},
 	img: {
 		type: String
 	},
-	telefono_tutor: {
+	sexo: {
 		type: String
 	},
-	estado: {
+	fecha_nacimiento: {
+		type: String
+	},
+	telefono_tutor: {
 		type: String
 	},
 	nombre_tutor: {
 		type: String
 	},
-	updated: {
-		type: Date,
-		default: Date.now
-	},
-	fecha_nacimiento: { type: String },
-	sexo: { type: String },
-	edad: {
-		type: Number,
-		min: 6,
-		max: 25
-	},
-	RNE: {
-		type: String
+	edad: { 
+		type: Number
 	}
+	
 });
 
 module.exports = mongoose.model('Estudiante', estudianteSchema);
