@@ -65,7 +65,7 @@ app.post('/estudiante', (req, res) => {
 	});
 });
 
-app.put('/estudiante/:id', (req, res) => {
+app.put('/estudiantes/:id', (req, res) => {
 	let id = req.params.id;
 
 	let body = _.pick(req.body, [ 'nombre', 'img', 'email', 'role', 'estado' ]);
@@ -73,7 +73,7 @@ app.put('/estudiante/:id', (req, res) => {
 	//new : true se asegura de enviar el objeto actualizado como respuesta
 });
 
-app.delete('/estudiante/:id', (req, res) => {
+app.delete('/estudiantes/:id', (req, res) => {
 	let id = req.params.id;
 });
 
