@@ -28,7 +28,7 @@ let asignaturas_modulos_comunesSchema = new Schema({
 	cursos_profesor: [{}] ,
 
 	estado: {
-		type: String
+		type: Boolean
 	},
 	modalidad: {
 		type: String

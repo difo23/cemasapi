@@ -35,6 +35,8 @@ app.get('/asignaturas_academicas', (req, res) => {
 app.post('/asignaturas_academicas', (req, res) => {
 	let body = req.body;
 	let id = mongoose.Types.ObjectId();
+	var myValue = body.estado;
+    var estado = myValue == 'true';
 	let asignaturas_academicas = new Asignaturas({
         _id: id,
         codigo: body.codigo,
@@ -43,7 +45,7 @@ app.post('/asignaturas_academicas', (req, res) => {
 		horas_anos: body.horas_anos,
 		grado: body.grado,
 		cursos_profesor: body.cursos_profesor,
-		estado: body.estado,
+		estado: estado,
 		modalidad: body.modalidad,
 		});
 

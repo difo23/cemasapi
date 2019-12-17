@@ -46,8 +46,7 @@ let calificacionSchema = new Schema({
 		}
 	],
 	updated: {
-		type: Date,
-		default: Date.now
+		type: String
 	}
 });
 

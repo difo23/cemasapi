@@ -28,7 +28,7 @@ let asignaturas_academicasSchema = new Schema({
 	cursos_profesor: [{}] ,
 
 	estado: {
-		type: String
+		type: Boolean
 	},
 	modalidad: {
 		type: String
