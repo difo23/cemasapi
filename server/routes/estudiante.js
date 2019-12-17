@@ -34,12 +34,23 @@ app.get('/estudiante', (req, res) => {
 app.post('/estudiante', (req, res) => {
 	let body = req.body;
 	let id = mongoose.Types.ObjectId();
+	var myValue = body.estado;
+    var estado = myValue == 'true';
 	let estudiante = new Estudiante({
 		_id: id,
 		cursos: body.cursos,
 		estado: estado,
 		nombre: body.nombre,
-		
+		email:  body.email,
+		RNE:	body.RNE,
+		matricula:	body.matricula,
+		apellido:	body.apellido,
+		img:	body.img,
+		sexo:	body.sexo,
+		fecha_nacimiento:	body.fecha_nacimiento,
+		telefono_tutor:	body.telefono_tutor,
+		nombre_tutor:	body.nombre_tutor,
+		edad:	body.edad,
 	});
 
 	estudiante.save((err, estudiantedb) => {

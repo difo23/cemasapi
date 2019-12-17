@@ -9,19 +9,22 @@ let estudianteSchema = new Schema({
 			type: String
 		}
 	],
-	nombre: {
-		type: String
+	estado: {
+		type: Boolean
 		//required: [ true, 'el nombre es necesario' ]
 	},
-	email: {
-		type: Boolean
+	nombre: {
+		type: String
 	},
-	RNE: {
+	email: {
 		type: String
 		//required: [ true, 'El matricula es necesario' ]
 	},
-	matricula: {
+	RNE: {
 		 type: String 
+	},
+	matricula: {
+		type: String
 	},
 	apellido: {
 		type: String
@@ -38,12 +41,13 @@ let estudianteSchema = new Schema({
 	telefono_tutor: {
 		type: String
 	},
-	nombre_tutor: {
+	nombre_tutor: { 
 		type: String
 	},
 	edad: { 
-		type: Number
+		type: String
 	}
+	
 	
 });
 
