@@ -10,7 +10,7 @@ app.get('/estudiante', (req, res) => {
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-	Estudiante.find({ estado: true }, 'cursos estado nombre email RNE matricula apellido img sexo fecha_nacimiento telefono_tutor nombre_tutor edad ')
+	Estudiante.find({ estado: true }, 'nombre apellido RNE estado matricula')
 		.skip(Number(from))
 		.limit(Number(limite))
 		.exec((err, estudiantes) => {
@@ -34,23 +34,20 @@ app.get('/estudiante', (req, res) => {
 app.post('/estudiante', (req, res) => {
 	let body = req.body;
 	let id = mongoose.Types.ObjectId();
-	var myValue = body.estado;
-    var estado = myValue == 'true';
 	let estudiante = new Estudiante({
 		_id: id,
-		cursos: body.cursos,
-		estado: estado,
 		nombre: body.nombre,
-		email:  body.email,
-		RNE:	body.RNE,
-		matricula:	body.matricula,
-		apellido:	body.apellido,
-		img:	body.img,
-		sexo:	body.sexo,
-		fecha_nacimiento:	body.fecha_nacimiento,
-		telefono_tutor:	body.telefono_tutor,
-		nombre_tutor:	body.nombre_tutor,
-		edad:	body.edad,
+		email: body.email,
+		RNE: body.rne,
+		matricula: body.matricula,
+		apellido: body.apellido,
+		img: body.img,
+		sexo: body.sexo,
+		fecha_nacimiento: new Date(body.fecha_nacimiento),
+		telefono_tutor: body.telefono_tutor,
+		nombre_tutor: body.nombre_tutor,
+		codigo_curso_activo: body.codigo_curso_activo,
+		edad: body.edad
 	});
 
 	estudiante.save((err, estudiantedb) => {
@@ -68,7 +65,7 @@ app.post('/estudiante', (req, res) => {
 	});
 });
 
-app.put('/estudiante/:id', (req, res) => {
+app.put('/estudiantes/:id', (req, res) => {
 	let id = req.params.id;
 
 	let body = _.pick(req.body, [ 'nombre', 'img', 'email', 'role', 'estado' ]);
@@ -76,7 +73,7 @@ app.put('/estudiante/:id', (req, res) => {
 	//new : true se asegura de enviar el objeto actualizado como respuesta
 });
 
-app.delete('/estudiante/:id', (req, res) => {
+app.delete('/estudiantes/:id', (req, res) => {
 	let id = req.params.id;
 });
 
