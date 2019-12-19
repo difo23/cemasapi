@@ -17,11 +17,12 @@ let periodos_estudiantesSchema = new Schema({
 		type: Number
 
 	},
-	estudiante_inscritos: {
-		type: Number
-	},
+	estudiante_inscritos: [{
+		type: Map,
+		of: String
+	}],
 	codigo_calificaciones: {
-		type: Number
+		type: String
 	},
 	titular: {
 		type: String

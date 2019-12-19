@@ -5,14 +5,13 @@ const Periodo_estudiante = require('../models/periodo_estudiante');
 const mongoose = require('mongoose');
 
 
-app.get('/periodo_estudiante', (req, res) => {
+app.get('/periodos_estudiantes', (req, res) => {
 	let from = req.query.desde || 0;
 	let limite = req.query.limite || 5;
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-	Periodo_estudiante.find()
-
+	Periodo_estudiante.find({ }, '_id codigo_calificaciones estudiantes_inscritos')
 		.exec((err, estudiantes) => {
 			if (err) {
 				return res.status(400).json({

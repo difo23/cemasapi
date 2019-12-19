@@ -13,7 +13,7 @@ app.get('/cursos', (req, res) => {
 
 	Curso.find({ estado: true }, 'asignaturas estado codigo_curso grado seccion modalidad especialidad')
 		.skip(Number(from))
-		.limit(Number(limite))
+		//.limit(Number(limite))
 		.exec((err, cursos) => {
 			if (err) {
 				return res.status(400).json({
