@@ -2,10 +2,6 @@ const express = require('express');
 const app = express();
 
 app.use(require('./estudiante'));
-app.use(require('./calificaciones_generales'));
-// app.use(require('./calif_tecnica'));
-// app.use(require('./calif_completiva'));
-// app.use(require('./calif_extraordinaria'));
 app.use(require('./profesor'));
 app.use(require('./asignaturas_academicas'));
 app.use(require('./cursos'));
