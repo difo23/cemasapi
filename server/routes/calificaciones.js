@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 
 app.get('/calificaciones', (req, res) => {
+	console.log("Metodo get calificaciones")
 	//let from = req.query.desde || 0;
 	//let limite = req.query.limite || 5;
 	// esto me permite probar el api cliente server en la misma pc
@@ -43,33 +44,38 @@ modalidad
 cantidad_estudiantes'
 */
 
-app.post('/calificaciones', (req, res) => {
-	let body = req.body;
+app.post('/calificacion', (req, res) => {
+	let b = "";
+	for (let key in req.body){
+		b=key
+	}
+	console.log("Metodo post calificaciones "+JSON.stringify(b))
+	let body = JSON.parse(b);
 	let id = mongoose.Types.ObjectId();
-	var myValue = body.estado;
-    var estado = myValue == 'true';
+	var myValue = body["estado"];
+	console.log("body estado "+myValue)
+	var estado = myValue == 'true';
+	res.setHeader('Access-Control-Allow-Origin', '*');
+
 	let calificaciones = new Calificaciones({
         _id: id,
-        codigo_periodo: body.codigo_periodo,
-		codigo_curso: body.codigo_curso,
-		codigo_maestro: body.codigo_maestro,
-		codigo_asignaturas: body.codigo_asignaturas,
-        estado: body.estado,
-		modalidad: body.modalidad
+        codigo_periodo: body["codigo_periodo"],
+		codigo_curso: body["codigo_curso"],
+		codigo_maestro: body["codigo_maestro"],
+		codigo_asignatura: body["codigo_asignatura"],
+		estado: estado,
+		codigo_calificaciones: body["codigo_calificacion"],
+		calificaciones_estudiantes: body["calificacion_estudiantes"],
+		modalidad: body["modalidad"]
 		});
 
-	Calificaciones.save((err, calificaciones) => {
+	calificaciones.save((err) => {
 		if (err) {
 			return res.status(400).json({
 				ok: false,
 				err
 			});
 		}
-
-		res.json({
-			ok: true,
-			calificaciones: calificaciones
-		});
 	});
 });
 

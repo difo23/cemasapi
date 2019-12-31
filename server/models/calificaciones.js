@@ -10,14 +10,14 @@ let calificacionesSchema = new Schema({
 		type: String
 	},
 	codigo_periodo: {
-		type: Number
+		type: String
 	},
 	codigo_maestro: {
-		type: Number
+		type: String
     },
     
 	codigo_asignatura: {
-		type: Number
+		type: String
 
 	},
 	calificaciones_estudiantes: [{
