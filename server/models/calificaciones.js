@@ -20,16 +20,22 @@ let calificacionesSchema = new Schema({
 		type: String
 
 	},
-	calificaciones_estudiantes: [{
+	calificacion_estudiantes: [{
 		type: Map,
 		of: String
 	}],
-	codigo_calificaciones: {
-		type: String
+	codigo_calificacion: {
+		type: String, 
+		unique: true
 	},
 
 	modalidad: {
 		type: String
+
+	},
+
+	estado: {
+		type: Boolean
 
 	}
 });

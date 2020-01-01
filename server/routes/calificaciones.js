@@ -58,18 +58,32 @@ app.post('/calificacion', (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
 	let calificaciones = new Calificaciones({
-        _id: id,
         codigo_periodo: body["codigo_periodo"],
 		codigo_curso: body["codigo_curso"],
 		codigo_maestro: body["codigo_maestro"],
 		codigo_asignatura: body["codigo_asignatura"],
 		estado: estado,
-		codigo_calificaciones: body["codigo_calificacion"],
-		calificaciones_estudiantes: body["calificacion_estudiantes"],
+		codigo_calificacion: body["codigo_calificacion"],
+		calificacion_estudiantes: body["calificacion_estudiantes"],
 		modalidad: body["modalidad"]
 		});
 
+		
+/*
 	calificaciones.save((err) => {
+		if (err) {
+			return res.status(400).json({
+				ok: false,
+				err
+			});
+		}
+	});
+
+*/
+	Calificaciones.findOneAndUpdate({
+		codigo_calificacion: body["codigo_calificacion"]
+	}, calificaciones, {upsert: true},(err)=> {
+		// Deal with the response data/error
 		if (err) {
 			return res.status(400).json({
 				ok: false,
