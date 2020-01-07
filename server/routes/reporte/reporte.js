@@ -10,21 +10,21 @@ const PDFDocument = require('./pdftablemake');
 		this.open(nombre_file);
 	}
 
-	open = function(name) {
+	open(name) {
 		this.doc.pipe(fs.createWriteStream(name));
 	}
 
-	close = function() {
+	close() {
 		this.doc.end();
 	}
 
-	addPage= function() {
+	addPage() {
 		// Add another page
 		this.doc.addPage()
 	}
 	
 
-	constructorFilas = function(filas) {
+	constructorFilas(filas) {
 		let rows = [];
 	
 		for (let fila of filas) {
@@ -35,7 +35,7 @@ const PDFDocument = require('./pdftablemake');
 	};
 
 	//curso, numero, nombre_estudiante, codigo_profesor, boletin, asignaturas, modulos, inicio
-	reporte = function(estudiante, inicio) {
+	reporte(estudiante, inicio) {
 		//Ejemplo name = "example.pdf"
 		
 		let rows_asignaturas = constructorFilas(estudiante.asignaturas);

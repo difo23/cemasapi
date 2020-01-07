@@ -3,6 +3,51 @@ const app = express();
 const _ = require('underscore');
 const Reportes = require('../models/reportes');
 const mongoose = require('mongoose');
+const Reporte = require("./reporte/reporte");
+const Calificaciones = require('../models/calificaciones');
+
+app.get('/reportes/:curso/:periodo', (req, res) => {
+	let curso= req.params.curso;
+	let periodo = req.params.periodo;
+	let reportePDF = new Reporte()
+
+	res.setHeader('Access-Control-Allow-Origin', '*');
+
+	Calificaciones.find({ codigo_curso: curso, codigo_periodo: periodo  }, '_id curso periodo numero_estudiante nombre_estudiante boletin rne titular_codigo estado asignaturas modulos')
+		.exec((err, calificaciones) => {
+			if (err) {
+				return res.status(400).json({
+					ok: false,
+					err
+				});
+			}
+			 
+			
+		});
+
+	Reportes.find({ curso: curso, periodo: periodo  }, '_id curso periodo numero_estudiante nombre_estudiante boletin rne titular_codigo estado asignaturas modulos')
+		.exec((err, reportes) => {
+			if (err) {
+				return res.status(400).json({
+					ok: false,
+					err
+				});
+			}
+
+			Reportes.count({ estado: true }, (err, count) => {
+				res.json({
+					ok: true,
+					count,
+					reportes
+				});
+			});
+		});
+
+
+		
+
+});
+
 
 
 app.get('/reportes', (req, res) => {
@@ -57,18 +102,6 @@ app.post('/reporte', (req, res) => {
 		modulos: body["modulos"]
 		});
 
-		
-/*
-	calificaciones.save((err) => {
-		if (err) {
-			return res.status(400).json({
-				ok: false,
-				err
-			});
-		}
-	});
-
-*/
 	Reportes.findOneAndUpdate({
 		boletin: body["boletin"]
 	}, reporte, {upsert: true},(err)=> {
