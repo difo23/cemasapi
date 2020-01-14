@@ -27,16 +27,6 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 		var reports_create = [];
 		//console.log(JSON.stringify(result.calificaciones))
 
-<<<<<<< HEAD
-		for(let estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
-			for (let calificacion of  result.calificaciones){
-				
-				for (let calificacion_estudiante of calificacion.calificacion_estudiantes){
-					for (let asignatura of result.curso[0].asignaturas){
-						if (asignatura === calificacion.codigo_asignatura){
-							
-								if (calificacion_estudiante.rne === estudiante.rne){
-=======
 			for (var asignatura of result.curso[0].asignaturas){
 				for(var estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
 					
@@ -50,7 +40,6 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 								
 								if (calificacion_estudiante.get("rne") === estudiante.get("rne")){
 									console.log(estudiante.get("numero"))
->>>>>>> difo23
 									// creo modulos
 									//re.test(asignatura)
 									var report = new ReporteObj({
