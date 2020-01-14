@@ -40,19 +40,11 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 									var report = new ReporteObj({
 										curso: curso,
 										periodo: periodo,
-<<<<<<< HEAD
-										numero_estudiante: estudiante.get("numero"),
-										rne: estudiante.get("rne"),
-										titular_codigo: result.periodo_estudiante[0].titular,
-										boletin: `${curso}:${periodo}:${estudiante.get("rne")}`,
-										nombre_estudiante: `${estudiante.get("nombres")} ${estudiante.get("apellidos")}`
-=======
 										numero_estudiante: estudiante.get('numero'),
 										rne: estudiante.get('rne'),
 										titular_codigo: result.periodo_estudiante[0].titular,
 										boletin: `${curso}:${periodo}:${estudiante.get('rne')}`,
 										nombre_estudiante: `${estudiante.get('nombres')} ${estudiante.get('apellidos')}`
->>>>>>> b228ecd3bafe360d8bb48d320f34c2f1d29a6954
 									});
 
 
