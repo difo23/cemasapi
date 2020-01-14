@@ -11,7 +11,7 @@ app.get('/cursos', (req, res) => {
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-	Curso.find({ estado: true }, 'asignaturas estado codigo_curso grado seccion modalidad especialidad')
+	Curso.find({ estado: true }, 'asignaturas profesores estado codigo_curso grado seccion modalidad especialidad')
 		.skip(Number(from))
 		//.limit(Number(limite))
 		.exec((err, cursos) => {
