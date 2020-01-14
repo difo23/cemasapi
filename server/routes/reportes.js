@@ -13,8 +13,8 @@ PromiseBlue.promisifyAll(mongoose);
 //TODO: Reparar en la base de datos periodo estudiantes el campo codgio curso mal escrito
 
 app.get('/reportes/:curso/:periodo', (req, res) => {
-	let curso= req.params.curso;
-	let periodo = req.params.periodo;
+	var curso= req.params.curso;
+	var periodo = req.params.periodo;
 
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	PromiseBlue.props ({
@@ -27,6 +27,7 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 		var reports_create = [];
 		//console.log(JSON.stringify(result.calificaciones))
 
+<<<<<<< HEAD
 		for(let estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
 			for (let calificacion of  result.calificaciones){
 				
@@ -35,16 +36,31 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 						if (asignatura === calificacion.codigo_asignatura){
 							
 								if (calificacion_estudiante.rne === estudiante.rne){
+=======
+			for (var asignatura of result.curso[0].asignaturas){
+				for(var estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
+					
+					for (var calificacion of  result.calificaciones){
+						
+					
+						if (asignatura === calificacion.codigo_asignatura){
+						
+							for (var calificacion_estudiante of calificacion.calificacion_estudiantes){
+								
+								
+								if (calificacion_estudiante.get("rne") === estudiante.get("rne")){
+									console.log(estudiante.get("numero"))
+>>>>>>> difo23
 									// creo modulos
 									//re.test(asignatura)
-									let report = new ReporteObj({
+									var report = new ReporteObj({
 										curso: curso,
 										periodo: periodo,
-										numero_estudiante: estudiante.numero,
-										rne: estudiante.rne,
-										titular_codigo: result.periodo_estudiante.titular,
-										boletin: `${curso}:${periodo}:${estudiante.rne}`,
-										nombre_estudiante: `${estudiante.nombres} ${estudiante.apellidos}`
+										numero_estudiante: estudiante.get("numero"),
+										rne: estudiante.get("rne"),
+										titular_codigo: result.periodo_estudiante[0].titular,
+										boletin: `${curso}:${periodo}:${estudiante.get("rne")}`,
+										nombre_estudiante: `${estudiante.get("nombres")} ${estudiante.get("apellidos")}`
 									});
 
 

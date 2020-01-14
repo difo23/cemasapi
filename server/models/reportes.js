@@ -24,7 +24,7 @@ let reportesSchema = new Schema({
 		type: Map,
 		of: String
 	}],
-	moduloss: [{
+	modulos: [{
 		type: Map,
 		of: String
 	}],
