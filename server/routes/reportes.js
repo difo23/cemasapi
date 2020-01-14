@@ -3,47 +3,87 @@ const app = express();
 const _ = require('underscore');
 const Reportes = require('../models/reportes');
 const mongoose = require('mongoose');
-const Reporte = require("./reporte/reporte");
+const ReporteObj = require("./reporte/ReṕorteObj");
 const Calificaciones = require('../models/calificaciones');
+const Cursos= require('../models/cursos');
+const Periodo_Est = require('../models/periodo_estudiantes');
+const PromiseBlue = required('bluebird');
+
+PromiseBlue.promisifyALL(mongoose);
 
 app.get('/reportes/:curso/:periodo', (req, res) => {
 	let curso= req.params.curso;
 	let periodo = req.params.periodo;
-	let reportePDF = new Reporte()
+	let reporteObj = new ReporteObj();
 
 	res.setHeader('Access-Control-Allow-Origin', '*');
+	PromedioBlue.props ({
+		curso: Cursos.find({codigo_curso: curso}, 'asignaturas').execAsync(),
+		calificaciones: Calificaciones.find({codigo_curso: curso, codigo_periodo: periodo}, 'codigo_asignatura calificacion_estudiantes').execAsync(),
+		periodo_estudiante: Periodo_Est.find({codigo_curso: curso, codigo_periodo: periodo}, 'estudiantes_inscritos titular').execAsync()
+	}).then((result)=>{
+		//codigo result.cusro, result.calificaciones y result.periodo_estudiantes
+		var re = new RegExp('^MF');
 
-	Calificaciones.find({ codigo_curso: curso, codigo_periodo: periodo  }, '_id curso periodo numero_estudiante nombre_estudiante boletin rne titular_codigo estado asignaturas modulos')
-		.exec((err, calificaciones) => {
-			if (err) {
-				return res.status(400).json({
-					ok: false,
-					err
-				});
+			for (asignatura of result.curso.asignaturas){
+				for(estudiante of result.periodo_estudiante.estudiantes_inscritos){
+					for (calificacion of  result.calificaciones){
+					
+						if (asignatura === calificacion.codigo_asignatura){
+							for (calificacion_estudiante of calificacion.calificacion_estudiantes){
+							
+								if (califcicion_estudiante.rne === estudiante.rne){
+									// creo modulos
+									//re.test(asignatura)
+									let report = new ReporteObj({
+										curso: curso,
+										periodo: periodo,
+										numero_estudiante: estudiante.numero,
+										rne: estudiante.rne,
+										titular_codigo: result.periodo_estudiante.titular,
+										boletin: `${curso}:${periodo}:${estudiante.rne}`,
+										nombre_estudiante: `${estudiante.nombres} ${estudiante.apellidos}`
+									});
+
+
+									if (re.test(asignatura)){
+										// creo modulos
+										//re.test(asignatura
+										report.crearModulos({
+											codigo_asignatura: asignatura,
+											calificaciones: califcicion_estudiante
+
+										});
+
+
+									}else{
+										// creo asiganaturas
+										report.crearAsignaturas({
+											codigo_asignatura: asignatura,
+											calificaciones: califcicion_estudiante
+
+										});
+	
+									}
+							
+		
+						
+							
+
+								}
+
+					
+						
+							}
+						}
+				
+					}
+
+				}
 			}
-			 
-			
-		});
-
-	Reportes.find({ curso: curso, periodo: periodo  }, '_id curso periodo numero_estudiante nombre_estudiante boletin rne titular_codigo estado asignaturas modulos')
-		.exec((err, reportes) => {
-			if (err) {
-				return res.status(400).json({
-					ok: false,
-					err
-				});
-			}
-
-			Reportes.count({ estado: true }, (err, count) => {
-				res.json({
-					ok: true,
-					count,
-					reportes
-				});
-			});
-		});
-
-
+		}).catch((err)=>{
+		console.log("ERROR! Query a DB")
+	})
 		
 
 });

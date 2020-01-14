@@ -3,7 +3,7 @@
 const fs = require('fs');
 const PDFDocument = require('./pdftablemake');
 
- class Reporte {
+ class ReportePDF {
 	constructor(nombre_file) {
 		this.doc = new PDFDocument();
 		this.count = 0;
@@ -75,4 +75,4 @@ const PDFDocument = require('./pdftablemake');
  
 
 
-module.exports = Reporte;
+module.exports = ReportePDF;
