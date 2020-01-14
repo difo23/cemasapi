@@ -27,29 +27,32 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 		var reports_create = [];
 		//console.log(JSON.stringify(result.calificaciones))
 
-			for (var asignatura of result.curso[0].asignaturas){
-				for(var estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
-					
-					for (var calificacion of  result.calificaciones){
-						
-					
+		for(var estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
+			for (var calificacion of  result.calificaciones){
+				
+				for (var calificacion_estudiante of calificacion.calificacion_estudiantes){
+					for (var asignatura of result.curso[0].asignaturas){
 						if (asignatura === calificacion.codigo_asignatura){
-						
-							for (var calificacion_estudiante of calificacion.calificacion_estudiantes){
-								
-								
-								if (calificacion_estudiante.get("rne") === estudiante.get("rne")){
-									console.log(estudiante.get("numero"))
+							
+								if (calificacion_estudiante.get('rne') === estudiante.get('rne')){
 									// creo modulos
 									//re.test(asignatura)
 									var report = new ReporteObj({
 										curso: curso,
 										periodo: periodo,
+<<<<<<< HEAD
 										numero_estudiante: estudiante.get("numero"),
 										rne: estudiante.get("rne"),
 										titular_codigo: result.periodo_estudiante[0].titular,
 										boletin: `${curso}:${periodo}:${estudiante.get("rne")}`,
 										nombre_estudiante: `${estudiante.get("nombres")} ${estudiante.get("apellidos")}`
+=======
+										numero_estudiante: estudiante.get('numero'),
+										rne: estudiante.get('rne'),
+										titular_codigo: result.periodo_estudiante[0].titular,
+										boletin: `${curso}:${periodo}:${estudiante.get('rne')}`,
+										nombre_estudiante: `${estudiante.get('nombres')} ${estudiante.get('apellidos')}`
+>>>>>>> b228ecd3bafe360d8bb48d320f34c2f1d29a6954
 									});
 
 
