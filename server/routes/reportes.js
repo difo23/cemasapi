@@ -3,36 +3,38 @@ const app = express();
 const _ = require('underscore');
 const Reportes = require('../models/reportes');
 const mongoose = require('mongoose');
-const ReporteObj = require("./reporte/ReṕorteObj");
+const ReporteObj = require("./reporte/ReporteObj");
 const Calificaciones = require('../models/calificaciones');
 const Cursos= require('../models/cursos');
-const Periodo_Est = require('../models/periodo_estudiantes');
-const PromiseBlue = required('bluebird');
+const Periodo_Est = require('../models/periodos_estudiantes');
+const PromiseBlue = require('bluebird');
 
-PromiseBlue.promisifyALL(mongoose);
+PromiseBlue.promisifyAll(mongoose);
+//TODO: Reparar en la base de datos periodo estudiantes el campo codgio curso mal escrito
 
 app.get('/reportes/:curso/:periodo', (req, res) => {
 	let curso= req.params.curso;
 	let periodo = req.params.periodo;
 
 	res.setHeader('Access-Control-Allow-Origin', '*');
-	PromedioBlue.props ({
+	PromiseBlue.props ({
 		curso: Cursos.find({codigo_curso: curso}, 'asignaturas').execAsync(),
 		calificaciones: Calificaciones.find({codigo_curso: curso, codigo_periodo: periodo}, 'codigo_asignatura calificacion_estudiantes').execAsync(),
-		periodo_estudiante: Periodo_Est.find({codigo_curso: curso, codigo_periodo: periodo}, 'estudiantes_inscritos titular').execAsync()
+		periodo_estudiante: Periodo_Est.find({codgio_curso: curso, codigo_periodo: periodo}, 'estudiantes_inscritos titular').execAsync()
 	}).then((result)=>{
 		//codigo result.cusro, result.calificaciones y result.periodo_estudiantes
 		var re = new RegExp('^MF');
 		var reports_create = [];
+		//console.log(JSON.stringify(result.calificaciones))
 
-			for (let asignatura of result.curso.asignaturas){
-				for(let estudiante of result.periodo_estudiante.estudiantes_inscritos){
+			for (let asignatura of result.curso[0].asignaturas){
+				for(let estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
 					for (let calificacion of  result.calificaciones){
 					
 						if (asignatura === calificacion.codigo_asignatura){
 							for (let calificacion_estudiante of calificacion.calificacion_estudiantes){
 							
-								if (califcicion_estudiante.rne === estudiante.rne){
+								if (calificacion_estudiante.rne === estudiante.rne){
 									// creo modulos
 									//re.test(asignatura)
 									let report = new ReporteObj({
@@ -51,7 +53,7 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 										//re.test(asignatura
 										report.crearModulos({
 											codigo_asignatura: asignatura,
-											calificaciones: califcicion_estudiante
+											calificaciones: calificacion_estudiante
 
 										});
 
@@ -84,13 +86,18 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 			}, reporte, {upsert: true},(err)=> {
 				// Deal with the response data/error
 				if (err) {
-					return err
+					return res.status(400).json({
+						ok: false,
+						err
+					});
 				}
+
+				
 			});
 		}
 
 		}).catch((err)=>{
-		console.log("ERROR! Query a DB")
+		console.log("ERROR! Query a DB"+err)
 	})
 		
 

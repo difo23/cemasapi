@@ -29,8 +29,8 @@ let reportesSchema = new Schema({
 		of: String
 	}],
 	rne: {
-		type: String, 
-		unique: true
+		type: String
+		//unique: true
 	},
 
 	titular_codigo: {

@@ -8,16 +8,16 @@ let periodos_estudiantesSchema = new Schema({
 		type: String
 	},
 	codigo_periodo: {
-		type: Number
+		type: String
 	},
 	fecha_inicio: {
-		type: Number
+		type: String
 	},
 	fecha_fin: {
-		type: Number
+		type: String
 
 	},
-	estudiante_inscritos: [{
+	estudiantes_inscritos: [{
 		type: Map,
 		of: String
 	}],
@@ -26,10 +26,6 @@ let periodos_estudiantesSchema = new Schema({
 	},
 	titular: {
 		type: String
-	},
-	updated: {
-		type: String
-
 	}
 });
 

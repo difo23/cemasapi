@@ -1,5 +1,5 @@
-import NotaAsignaturas from "../NotaAsignaturas";
-import NotaModulos from "../NotaModulos";
+const NotaAsignaturas = require("./NotaAsignaturas");
+const NotaModulos = require( "./NotaModulos");
 
 class ReporteObj{
 

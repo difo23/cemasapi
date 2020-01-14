@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const _ = require('underscore');
-const Periodo_estudiante = require('../models/periodo_estudiante');
+const Periodo_estudiante = require('../models/periodos_estudiantes');
 const mongoose = require('mongoose');
 
 
