@@ -36,8 +36,8 @@ class ReporteObj{
        // console.log('Crear modulos en estudiantes',estudiante)
         let asignatura = new NotaModulos({
             codigo_asignatura: estudiante.codigo_asignatura,
-            acumulado: estudiante.calificaciones.acumulado,
-            total: estudiante.calificaciones.total
+            acumulado: estudiante.calificaciones.get('acumulado'),
+            total: estudiante.calificaciones.get('total')
         })
         this.modulos.push(asignatura)
 
