@@ -14,7 +14,6 @@ PromiseBlue.promisifyALL(mongoose);
 app.get('/reportes/:curso/:periodo', (req, res) => {
 	let curso= req.params.curso;
 	let periodo = req.params.periodo;
-	let reporteObj = new ReporteObj();
 
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	PromedioBlue.props ({
@@ -24,13 +23,14 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 	}).then((result)=>{
 		//codigo result.cusro, result.calificaciones y result.periodo_estudiantes
 		var re = new RegExp('^MF');
+		var reports_create = [];
 
-			for (asignatura of result.curso.asignaturas){
-				for(estudiante of result.periodo_estudiante.estudiantes_inscritos){
-					for (calificacion of  result.calificaciones){
+			for (let asignatura of result.curso.asignaturas){
+				for(let estudiante of result.periodo_estudiante.estudiantes_inscritos){
+					for (let calificacion of  result.calificaciones){
 					
 						if (asignatura === calificacion.codigo_asignatura){
-							for (calificacion_estudiante of calificacion.calificacion_estudiantes){
+							for (let calificacion_estudiante of calificacion.calificacion_estudiantes){
 							
 								if (califcicion_estudiante.rne === estudiante.rne){
 									// creo modulos
@@ -64,23 +64,31 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 
 										});
 	
-									}
-							
-		
-						
-							
+									}	
+									
+									reports_create.push(report)
 
 								}
-
-					
-						
 							}
 						}
-				
 					}
-
 				}
 			}
+
+
+			//codigo para save reportes 
+			for (let reporte of reports_create){
+
+			Reportes.findOneAndUpdate({
+				boletin: reporte["boletin"]
+			}, reporte, {upsert: true},(err)=> {
+				// Deal with the response data/error
+				if (err) {
+					return err
+				}
+			});
+		}
+
 		}).catch((err)=>{
 		console.log("ERROR! Query a DB")
 	})
