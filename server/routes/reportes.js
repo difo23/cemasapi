@@ -27,12 +27,12 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 		var reports_create = [];
 		//console.log(JSON.stringify(result.calificaciones))
 
-			for (let asignatura of result.curso[0].asignaturas){
-				for(let estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
-					for (let calificacion of  result.calificaciones){
-					
+		for(let estudiante of result.periodo_estudiante[0].estudiantes_inscritos){
+			for (let calificacion of  result.calificaciones){
+				
+				for (let calificacion_estudiante of calificacion.calificacion_estudiantes){
+					for (let asignatura of result.curso[0].asignaturas){
 						if (asignatura === calificacion.codigo_asignatura){
-							for (let calificacion_estudiante of calificacion.calificacion_estudiantes){
 							
 								if (calificacion_estudiante.rne === estudiante.rne){
 									// creo modulos
@@ -62,7 +62,7 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 										// creo asiganaturas
 										report.crearAsignaturas({
 											codigo_asignatura: asignatura,
-											calificaciones: califcicion_estudiante
+											calificaciones: calificacion_estudiante
 
 										});
 	
@@ -86,10 +86,10 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 			}, reporte, {upsert: true},(err)=> {
 				// Deal with the response data/error
 				if (err) {
-					return res.status(400).json({
-						ok: false,
-						err
-					});
+					// return res.status(400).json({
+					// 	ok: false,
+					// 	err
+					// });
 				}
 
 				

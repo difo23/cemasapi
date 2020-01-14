@@ -18,19 +18,22 @@ class ReporteObj{
 
 
     crearAsignaturas(estudiante){
+        console.log('Crear modulos en estudiantes',estudiante)
         let asignatura = new NotaAsignaturas({
             codigo_asignatura: estudiante.codigo_asignatura,
-            ago_sept_oct: estudiante.calificaciones.ago_sept_oct,
-            nov_dic_ene: estudiante.calificaciones.nov_dic_ene,
-            feb_mar: estudiante.calificaciones.feb_mar,
-            abr_may_jun : estudiante.calificaciones.abr_may_jun,
-            cf : estudiante.calificaciones.cf
+            ago_sept_oct: estudiante.calificaciones.get('ago_sept_oct'),
+            nov_dic_ene: estudiante.calificaciones.get('nov_dic_ene'),
+            feb_mar: estudiante.calificaciones.get('feb_mar'),
+            abr_may_jun : estudiante.calificaciones.get('abr_may_jun'),
+            cf : estudiante.calificaciones.get('cf')
         })
+        console.log('Resultado NotasAsignaturas', asignatura)
         this.asignaturas.push(asignatura)
 
     }
 
     crearModulos(estudiante){
+       // console.log('Crear modulos en estudiantes',estudiante)
         let asignatura = new NotaModulos({
             codigo_asignatura: estudiante.codigo_asignatura,
             acumulado: estudiante.calificaciones.acumulado,
