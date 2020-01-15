@@ -9,6 +9,9 @@ let reportesSchema = new Schema({
     curso: {
 		type: String
 	},
+	periodo: {
+		type: String
+	},
 	numero_estudiante: {
 		type: String
 	},
