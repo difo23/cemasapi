@@ -78,21 +78,23 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 			try {
 				let periodoCurso = `${periodo}:${curso}`
 
-				Reportes.updateMany({periodo: periodoCurso },reports_create, {upsert: true}).exec();
+				//Reportes.updateMany({periodo: periodoCurso },reports_create, {upsert: true}).exec();
 				
-			// 	Reportes.countDocuments({periodo: periodoCurso }, (err, result)=>{
-			// 		if (err) {
-			// 			console.log(err);
-			// 		  } else if(result){
+				Reportes.countDocuments({periodo: periodoCurso }, (err, result)=>{
+					if (err) {
+						console.log(err);
+					  } else if(result){
 
-			// 			Reportes.updateMany(reports_create);
+						// Reportes.updateMany(reports_create);
 
-			// 			Reportes.deleteMany( {periodo: periodoCurso }).exec();
-			// 		  }
-			// 		   else {
-			// 			Reportes.insertMany(reports_create);
-			// 		}
-			// })
+						Reportes.deleteMany( {periodo: periodoCurso }).exec();
+						Reportes.insertMany(reports_create);
+
+					  }
+				   else {
+						Reportes.insertMany(reports_create);
+					}
+				})
 				
 
 
@@ -108,6 +110,12 @@ app.get('/reportes/:curso/:periodo', (req, res) => {
 			});
 		}).catch((err) => {
 			console.log('ERROR! Query a DB' + err);
+			if (err) {
+				return res.status(400).json({
+					ok: false,
+					err
+				});
+			}
 		});
 });
 

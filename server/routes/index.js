@@ -6,8 +6,9 @@ app.use(require('./profesor'));
 app.use(require('./asignaturas_academicas'));
 app.use(require('./cursos'));
 app.use(require('./periodo_estudiante'));
-app.use(require('./tecnicos.js'));
-app.use(require('./reportes.js'));
-app.use(require('./calificaciones.js'));
+app.use(require('./tecnicos'));
+app.use(require('./reportes'));
+app.use(require('./calificaciones'));
+app.use(require('./reportPDF'));
 
 module.exports = app;

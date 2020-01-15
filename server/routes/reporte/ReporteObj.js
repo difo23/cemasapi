@@ -1,5 +1,4 @@
-const NotaAsignaturas = require('./NotaAsignaturas');
-const NotaModulos = require('./NotaModulos');
+
 
 class ReporteObj {
 	constructor(props) {
