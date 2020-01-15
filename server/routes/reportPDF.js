@@ -33,37 +33,37 @@ app.get('/pdf/:curso/:periodo',(req, res)=>{
 
                 for (let rep of result.reportes){
                     console.log("Reporte por estudiante", rep)
-                    pdf.reporte(rep, 0);
-                    break;
+                    // pdf.reporte(rep, 0);
+                    // break;
                     // Division inicio 360 
-                    // switch(count){
-                    //     case 1:
-                    //         console.log(1,count)
-                    //         pdf.reporte(rep, 0);
-                    //         count= count +1;
-                    //         break;
+                    switch(count){
+                        case 1:
+                            console.log(1,count)
+                            pdf.reporte(rep, 0);
+                            count++;
+                        break;
 
-                    //     case 2:
-                    //     //pdf.reporte(rep, 360)
-                    //         console.log(2,count)
-                    //         count= count +1;
-                    //         break;
+                        case 2:
+                             pdf.reporte(rep, 360)
+                             console.log(2,count)
+                             count++;
+                        break;
 
-                    //     case 3:
-                    // //pdf.addPage();
-                    // //pdf.reporte(rep, 0)
-                    //         console.log(3,count)
-                    //         count= count +1;
-                    //     break;
+                        case 3:
+                            pdf.addPage();
+                            pdf.reporte(rep, 0)
+                            console.log(3,count)
+                            count++;
+                        break;
 
-                    //     default:
-                    //         console.log(2,count)
-                    //         console.log("Default")
-                    // //pdf.reporte(rep, 360)
-                    //         count =1;
-                    // //pdf.addPage();
+                        default:
+                            console.log(2,count)
+                            console.log("Default")
+                            pdf.reporte(rep, 360)
+                            count =1;
+                            pdf.addPage();
                             
-                    // }
+                    }
 
                     
                 }
