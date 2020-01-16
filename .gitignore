@@ -1,2 +1,3 @@
 node_modules
 .env
+server/routes/reporte/pdf/6B2019-2020.pdf

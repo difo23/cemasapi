@@ -60,15 +60,15 @@ var path = require('path');
 			rows: rows_modulos
 		};
 	
-		this.doc.fontSize(12).font('Times-Bold').text('POLITÉCNICO MANUEL ACEVEDO SERRANO', 70, 30 + inicio).moveDown(0.5);
+		this.doc.fontSize(12).font('Times-Bold').text('CENTRO EDUCATIVO MANUEL ACEVEDO SERRANO FE Y ALEGRÍA', 70, 30 + inicio).moveDown(0.5);
 	
 		this.doc.image(path.join(__dirname,'/test.jpeg'), 490, 20 + inicio, { scale: 0.15 });
 	
-		this.doc.fontSize(10).font('Times-Roman').text('RIO VERDE ABAJO, CUTUPU, LA VEGA, REP. DOM.', 70, 45 + inicio).moveDown(0.5);
+		this.doc.fontSize(10).font('Times-Roman').text('RÍO VERDE ARRIBA, CUTUPÚ, LA VEGA, REP. DOM.', 70, 45 + inicio).moveDown(0.5);
 	
-		this.doc.fontSize(8).font('Times-Bold').text(`BOLETIN: ${estudiante.periodo} FECHA: ${fecha}`, 70, 60 + inicio).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Bold').text(`BOLETÏN: ${estudiante.periodo} FECHA: ${fecha}`, 70, 60 + inicio).moveDown(0.5);
 	
-		this.doc.fontSize(8).font('Times-Roman').text(`CURSO: ${estudiante.curso}  #: ${estudiante.numero_estudiante} RNE: ${estudiante.rne}  EST.: ${estudiante.nombre_estudiante.toUpperCase()} PROF. TITULAR: ${estudiante.titular_codigo}`, 70, 85+inicio).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Roman').text(`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${estudiante.titular_codigo}`, 70, 85+inicio).moveDown(0.5);
 	
 		this.doc.table(asignaturas_academicas, 70, 100+inicio, {});
 	
