@@ -4,6 +4,7 @@ const Reportes = require('../models/reportes');
 const mongoose = require('mongoose');
 const ReporteCreate = require('./reporte/ReporteCreatePDF');
 const PromiseBlue = require('bluebird');
+var path = require('path');
 
 PromiseBlue.promisifyAll(mongoose);
 let app = express();
