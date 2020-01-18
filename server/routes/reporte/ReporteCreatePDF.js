@@ -47,6 +47,7 @@ class ReporteCreatePDF {
 		console.log('Empezamos a Crear el pdf para ', estudiante, ' Pagina ', this.count, ' Div', inicio);
 		let rows_asignaturas = this.constructorFilas(estudiante.asignaturas);
 		let rows_modulos = this.constructorFilas(estudiante.modulos);
+		let titular = estudiante.titular_codigo.split('-');
 
 		const asignaturas_academicas = {
 			headers: [ 'Asignaturas', 'Ago-Sept-oct', 'Nov-Dic-Ene', 'Feb-Mar', 'Abr-May-Jun', 'CF' ],
@@ -82,7 +83,7 @@ class ReporteCreatePDF {
 			.fontSize(8)
 			.font('Times-Roman')
 			.text(
-				`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${estudiante.titular_codigo}`,
+				`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${titular[0]}`,
 				70,
 				85 + inicio
 			)
