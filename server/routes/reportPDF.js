@@ -90,14 +90,14 @@ app.get('/pdf/:curso/:periodo', (req, res) => {
 
 app.get('/file/:curso/:periodo', (req, res) => {
 	let curso = req.params.curso;
-	let periodo = req.params.periodo;
+    let periodo = req.params.periodo;
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
-	let pathPDF = path.resolve(__dirname, `./reporte/pdf/${curso}${periodo}.pdf`);
+	let pathPDF = path.join(__dirname, `/reporte/pdf/${curso}${periodo}.pdf`);
 	if (fs.existsSync(pathPDF)) {
 		res.sendFile(pathPDF);
 	} else {
-		let notImagePath = path.resolve(__dirname, './test.jpeg');
-
+		let notImagePath = path.join(__dirname, '/reporte/test.jpeg');
 		res.sendFile(notImagePath);
 	}
 });
