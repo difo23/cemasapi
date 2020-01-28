@@ -53,6 +53,11 @@ class ReporteCreatePDF {
 			headers: [ 'Asignaturas', 'Ago-Sept-oct', 'Nov-Dic-Ene', 'Feb-Mar', 'Abr-May-Jun', 'CF' ],
 			rows: rows_asignaturas
 		};
+		if(estudiante.curso[0]*1 > 3){
+			const modulos_tecnicos = {
+				headers: [ 'Módulos', 'Acumulado', 'Total' ],
+				rows: rows_modulos
+		};}
 
 		const modulos_tecnicos = {
 			headers: [ 'Módulos', 'Acumulado', 'Total' ],
@@ -75,8 +80,14 @@ class ReporteCreatePDF {
 
 		this.doc
 			.fontSize(8)
+			.font('Times-Roman')
+			.text('TEL: (809)691-6052 | Email: manuelacevedoserrano1@gmail.com', 70, 60 + inicio)
+			.moveDown(0.5);
+
+		this.doc
+			.fontSize(8)
 			.font('Times-Bold')
-			.text(`BOLETÏN: ${estudiante.periodo} FECHA: ${fecha}`, 70, 60 + inicio)
+			.text(`BOLETÏN: ${estudiante.periodo} FECHA: ${fecha}`, 70, 75 + inicio)
 			.moveDown(0.5);
 
 		this.doc
@@ -85,16 +96,17 @@ class ReporteCreatePDF {
 			.text(
 				`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${titular[0]}`,
 				70,
-				85 + inicio
+				100 + inicio
 			)
 			.moveDown(0.5);
 
-		this.doc.table(asignaturas_academicas, 70, 100 + inicio, {});
+		this.doc.table(asignaturas_academicas, 70, 115 + inicio, {});
 
-		this.doc.moveDown().table(modulos_tecnicos, 70, 225 + inicio, { width: 300 });
-
-		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 320 + inicio).moveDown(0.5);
-		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 320 + inicio).moveDown(0.5);
+		if(estudiante.curso[0]*1 > 3){
+			this.doc.moveDown().table(modulos_tecnicos, 70, 240 + inicio, { width: 300 });
+		}
+		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 335 + inicio).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 335 + inicio).moveDown(0.5);
 	}
 }
 
