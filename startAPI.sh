@@ -1,0 +1,1 @@
+nodemon ./server/index.js
