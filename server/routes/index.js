@@ -10,5 +10,5 @@ app.use(require('./tecnicos'));
 app.use(require('./reportes'));
 app.use(require('./calificaciones'));
 app.use(require('./reportPDF'));
-
+app.use(require('./upload'));
 module.exports = app;
