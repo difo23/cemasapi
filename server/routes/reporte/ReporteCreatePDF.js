@@ -103,11 +103,12 @@ class ReporteCreatePDF {
 		this.doc.table(asignaturas_academicas, 70, 115 + inicio, {});
 
 		if(estudiante.curso[0]*1 > 3){
-			this.doc.moveDown().table(modulos_tecnicos, 70, 240 + inicio, { width: 300 });
+			this.doc.moveDown().table(modulos_tecnicos, 70, 245 + inicio, { width: 300 });
 		}
-		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 335 + inicio).moveDown(0.5);
-		//this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 335 + inicio).moveDown(0.5);
-		this.doc.image(path.join(__dirname, '/director.jpeg'), 250, 335 + inicio, { scale: 0.05 }).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 350 + inicio).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 350 + inicio).moveDown(0.5);
+
+		this.doc.image(path.join(__dirname, '/director.jpeg'),  250, 320 + inicio, { scale: 0.05 });
 	}
 }
 
