@@ -106,7 +106,8 @@ class ReporteCreatePDF {
 			this.doc.moveDown().table(modulos_tecnicos, 70, 240 + inicio, { width: 300 });
 		}
 		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 335 + inicio).moveDown(0.5);
-		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 335 + inicio).moveDown(0.5);
+		//this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 335 + inicio).moveDown(0.5);
+		this.doc.image(path.join(__dirname, '/director.jpeg'), 250, 335 + inicio, { scale: 0.05 }).moveDown(0.5);
 	}
 }
 
