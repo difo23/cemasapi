@@ -1,6 +1,6 @@
 //Puerto
-const dotenv = require('dotenv');
-dotenv.config();
+// const dotenv = require('dotenv');
+// dotenv.config();
 
 process.env.PORT = process.env.PORT;
 const USER = process.env.MONGO_USER;
