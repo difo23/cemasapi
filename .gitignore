@@ -1,5 +1,5 @@
 node_modules
 .env
 
-/server/routes/reporte/pdf
+
 /public/uploads/*
