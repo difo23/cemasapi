@@ -15,7 +15,7 @@ let urlDB;
 if (NODE_ENV === 'dev') {
 	urlDB = `mongodb://${USER}:${PASS}@localhost/cemas`;
 } else {
-	urlDB = `mongodb+srv://${USER}:${PASS}@cluster0-4fmpq.mongodb.net/test?retryWrites=true&w=majority`;
+	urlDB = `mongodb+srv://${USER}:${PASS}@cluster0-4fmpq.mongodb.net/cemas?retryWrites=true&w=majority`;
 }
 
 process.env.URLDB = urlDB;
