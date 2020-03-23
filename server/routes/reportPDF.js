@@ -87,7 +87,7 @@ app.get('/pdf/:curso/:periodo', (req, res) => {
 			}
 		});
 });
-//hola
+
 app.get('/file/:curso/:periodo', (req, res) => {
 	let curso = req.params.curso;
 	let periodo = req.params.periodo;
