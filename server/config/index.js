@@ -2,20 +2,20 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
-process.env.PORT = process.env.PORT || 3000;
+process.env.PORT = process.env.PORT;
 const USER = process.env.MONGO_USER;
 const PASS = process.env.MONGO_PASS;
-const URLDB = process.env.URLDB;
+
 //Entorno
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+const NODE_ENV = process.env.NODE_ENV;
 
 let urlDB;
 
-if (process.env.NODE_ENV === 'dev') {
-	urlDB = URLDB;
+if (NODE_ENV === 'dev') {
+	urlDB = `mongodb://${USER}:${PASS}@localhost/cemas`;
 } else {
-	urlDB = `mongodb+srv://${USER}:${PASS}@cafe-1ue16.mongodb.net/test?retryWrites=true`;
+	urlDB = `mongodb+srv://${USER}:${PASS}@@cluster0-4fmpq.mongodb.net/test?retryWrites=true&w=majority`;
 }
 
 process.env.URLDB = urlDB;
