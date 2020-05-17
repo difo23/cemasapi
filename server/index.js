@@ -1,10 +1,15 @@
 require('./config');
+﻿require('rootpath')();
+
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const boddyParser = require('body-parser');
 const app = express();
 const mongoose = require('mongoose');
 const PORT = process.env.PORT;
+const cors = require('cors');
+const jwt = require('_helpers/jwt');
+const errorHandler = require('_helpers/error-handler');
 
 app.use(boddyParser.urlencoded({ extended: false }));
 app.use(boddyParser.json());
@@ -12,6 +17,15 @@ app.use(boddyParser.json());
 //configuracion goblar de rutas
 app.use(require('./routes'));
 app.use(fileUpload());
+
+// use JWT auth to secure the api
+app.use(jwt());
+
+// api routes
+//app.use('/users', require('./users/users.controller'));
+
+// global error handler
+app.use(errorHandler);
 
 mongoose
 	.connect(
