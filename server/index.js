@@ -7,12 +7,14 @@ const boddyParser = require('body-parser');
 const app = express();
 const mongoose = require('mongoose');
 const PORT = process.env.PORT;
+const URLDB = process.env.URLDB;
 const cors = require('cors');
-const jwt = require('_helpers/jwt');
-const errorHandler = require('_helpers/error-handler');
+const jwt = require('./_helpers/jwt');
+const errorHandler = require('./_helpers/error-handler');
 
 app.use(boddyParser.urlencoded({ extended: false }));
 app.use(boddyParser.json());
+app.use(cors());
 
 //configuracion goblar de rutas
 app.use(require('./routes'));
@@ -27,9 +29,11 @@ app.use(jwt());
 // global error handler
 app.use(errorHandler);
 
+
+console.log(URLDB, PORT)
 mongoose
 	.connect(
-		process.env.URLDB,
+		URLDB,
 		{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true },
 		(err, res) => {
 			if (err) throw err;

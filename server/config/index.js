@@ -13,7 +13,10 @@ const NODE_ENV = process.env.NODE_ENV;
 let urlDB;
 
 if (NODE_ENV === 'dev') {
-	urlDB = `mongodb://${USER}:${PASS}@localhost/cemas`;
+	//urlDB = `mongodb://${USER}:${PASS}@localhost/cemas`;
+
+	urlDB = `mongodb+srv://${USER}:${PASS}@cluster0-4fmpq.mongodb.net/cemas?retryWrites=true&w=majority`;
+
 } else {
 	urlDB = `mongodb+srv://${USER}:${PASS}@cluster0-4fmpq.mongodb.net/cemas?retryWrites=true&w=majority`;
 }

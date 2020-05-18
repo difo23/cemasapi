@@ -11,4 +11,7 @@ app.use(require('./reportes'));
 app.use(require('./calificaciones'));
 app.use(require('./reportPDF'));
 app.use(require('./upload'));
+app.use(require('./users/users.controller'));
+
+
 module.exports = app;
