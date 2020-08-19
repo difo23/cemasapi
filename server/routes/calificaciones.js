@@ -7,15 +7,14 @@ const mongoose = require('mongoose');
 
 app.get('/calificaciones', (req, res) => {
 	console.log("Metodo get calificaciones")
-	//let from = req.query.desde || 0;
-	//let limite = req.query.limite || 5;
+	let codigo_curso = req.query.curso;
+	let codigo_periodo = req.query.periodo;
+	let codigo_asignatura = req.query.asignatura;
+
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-    Calificaciones.find({ estado: true }, '_id codigo_periodo codigo_calificacion codigo_curso codigo_maestro codigo_asignaturas estado modalidad calificacion_estudiantes')
-		//.skip(Number(from))
-		//.limit(Number(limite))
-		.exec((err, calificaciones) => {
+    Calificaciones.find({ estado: true, codigo_curso:codigo_curso, codigo_periodo:codigo_periodo, codigo_asignatura:codigo_asignatura }, '_id codigo_periodo codigo_calificacion codigo_curso codigo_maestro codigo_asignatura estado modalidad calificacion_estudiantes').exec((err, calificaciones) => {
 			if (err) {
 				return res.status(400).json({
 					ok: false,
@@ -23,13 +22,12 @@ app.get('/calificaciones', (req, res) => {
 				});
 			}
 
-			Calificaciones.count({ estado: true }, (err, count) => {
-				res.json({
+			
+			return	res.json({
 					ok: true,
-					count,
-					calificaciones
+					data: calificaciones
 				});
-			});
+			
 		});
 });
 
@@ -45,14 +43,12 @@ cantidad_estudiantes'
 */
 
 app.post('/calificacion', (req, res) => {
-	let b = "";
-	for (let key in req.body){
-		b=key
-	}
-	console.log("Metodo post calificaciones "+JSON.stringify(b))
-	let body = JSON.parse(b);
+	
+	console.log("Metodo post calificaciones "+JSON.stringify(req.body))
+	let {body} = req;
 	let id = mongoose.Types.ObjectId();
 	var myValue = body["estado"];
+	
 	console.log("body estado "+myValue)
 	var estado = myValue == 'true';
 	res.setHeader('Access-Control-Allow-Origin', '*');
@@ -67,19 +63,8 @@ app.post('/calificacion', (req, res) => {
 		calificacion_estudiantes: body["calificacion_estudiantes"],
 		modalidad: body["modalidad"]
 		});
-
 		
-/*
-	calificaciones.save((err) => {
-		if (err) {
-			return res.status(400).json({
-				ok: false,
-				err
-			});
-		}
-	});
 
-*/
 	Calificaciones.findOneAndUpdate({
 		codigo_calificacion: body["codigo_calificacion"]
 	}, calificaciones, {upsert: true},(err)=> {
@@ -90,6 +75,11 @@ app.post('/calificacion', (req, res) => {
 				err
 			});
 		}
+		return res.json({
+				ok: true,
+				message: 'Calificacion Guardada'
+			});
+
 	});
 });
 

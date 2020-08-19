@@ -29,6 +29,8 @@ app.use(jwt());
 // global error handler
 app.use(errorHandler);
 
+mongoose.set('useFindAndModify', false);
+
 
 console.log(URLDB, PORT)
 mongoose

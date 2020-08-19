@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const uuid = require('uuid');
 
 let Schema = mongoose.Schema;
 
@@ -6,8 +7,7 @@ let usersSchema = new Schema({
 
    
 	_id: Schema.Types.ObjectId,
-
-    username: { type: String, unique: true, required: true },
+    	username: { type: String, unique: true, required: true },
     hash: { type: String, required: true },
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
@@ -23,14 +23,14 @@ let usersSchema = new Schema({
 	}
 });
 
-usersSchema.set('toJSON', {
-    virtuals: true,
+/*usersSchema.set('toJSON', {
+  virtuals: true,
     versionKey: false,
     transform: function (doc, ret) {
-        delete ret._id;
+       delete ret._id;
         delete ret.hash;
     }
 });
-
+*/
 
 module.exports = mongoose.model('users', usersSchema);

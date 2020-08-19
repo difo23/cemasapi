@@ -6,12 +6,12 @@ const mongoose = require('mongoose');
 
 
 app.get('/periodos_estudiantes', (req, res) => {
-	let from = req.query.desde || 0;
-	let limite = req.query.limite || 5;
+	let curso = req.query.curso ;
+	let periodo = req.query.periodo;
 	// esto me permite probar el api cliente server en la misma pc
 	res.setHeader('Access-Control-Allow-Origin', '*');
 
-	Periodo_estudiante.find({ }, '_id codigo_calificaciones estudiantes_inscritos')
+	Periodo_estudiante.find({ codigo_periodo: periodo, codigo_curso: curso}, '_id codigo_calificaciones estudiantes_inscritos')
 		.exec((err, estudiantes) => {
 			if (err) {
 				return res.status(400).json({
@@ -22,7 +22,7 @@ app.get('/periodos_estudiantes', (req, res) => {
 
 				res.json({
 					ok: true,
-					estudiantes
+					data: estudiantes
 				});
 			
 		});

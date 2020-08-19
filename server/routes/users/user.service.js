@@ -1,8 +1,8 @@
 ﻿
 const jwt = require('jsonwebtoken');
 const User = require('../../models/users');
-
-
+const bcrypt = require('bcryptjs');
+ mongoose = require('mongoose');
 
 
 async function authenticate({ username, password }) {
@@ -37,7 +37,7 @@ async function create(userParam) {
     if (userParam.password) {
         user.hash = bcrypt.hashSync(userParam.password, 10);
     }
-
+	
     // save user
     await user.save();
 }
