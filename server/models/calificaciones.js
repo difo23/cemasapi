@@ -5,7 +5,9 @@ let Schema = mongoose.Schema;
 let calificacionesSchema = new Schema({
 
 	_id: Schema.Types.ObjectId,
-
+	codigo_centro: {
+		type: String
+	},
     codigo_curso: {
 		type: String
 	},
