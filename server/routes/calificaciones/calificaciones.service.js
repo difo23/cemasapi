@@ -34,7 +34,7 @@ async function getAll() {
 }
 
 async function getByCode(key, value) {
-    return await ModelDB.find({ [key]: value });
+    return await ModelDB.find({ [key]: value }).sort([['codigo_curso', -1]]);
 }
 
 
