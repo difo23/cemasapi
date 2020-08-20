@@ -6,6 +6,7 @@ const app = express();
 app.post('/calificaciones/create', register);
 app.get('/calificaciones', getAll);
 app.get('/calificacion/:id', getById);
+app.get('/calificacion/:key/:value', getByCode);
 app.put('/calificacion/:id', update);
 app.delete('/calificacion/:id', _delete);
 
@@ -32,7 +33,14 @@ function getAll(req, res, next) {
 
 function getById(req, res, next) {
     calificacionesService.getById(req.params.id)
-        .then(user => user ? res.json(user) : res.sendStatus(404))
+        .then(calificacion => calificacion ? res.json(calificacion) : res.sendStatus(404))
+        .catch(err => next(err));
+}
+
+function getByCode(req, res, next) {
+    console.log(req.params.value);
+    calificacionesService.getByCode(req.params.key, req.params.value)
+        .then(calificaciones => calificaciones ? res.json(calificaciones) : res.sendStatus(404))
         .catch(err => next(err));
 }
 

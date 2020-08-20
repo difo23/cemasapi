@@ -33,6 +33,10 @@ async function getAll() {
     return await ModelDB.find();
 }
 
+async function getByCode(key, value) {
+    return await ModelDB.find({ [key]: value });
+}
+
 
 async function getById(id) {
     return await ModelDB.findById(id);
@@ -63,5 +67,6 @@ module.exports = {
     update,
     getAll,
     getById,
-    _delete
+    _delete,
+    getByCode
 };

@@ -27,9 +27,9 @@ content-type: application/json
 }
 
 
-### Update id 5f3de89cf6d133682847328f
+### Get by code
 
-PUT http://localhost:8626/calificacion/5f3de89cf6d133682847328f HTTP/1.1
+GET http://localhost:8626/calificacion/codigo_maestro/ÁNGELA%20FELIZ-AMFH000 HTTP/1.1
 content-type: application/json
 
 {
@@ -48,3 +48,7 @@ content-type: application/json
 ### Delete id 5f3de89cf6d133682847328f
 
 DELETE  http://localhost:8626/calificacion/5f3de89cf6d133682847328f HTTP/1.1
+
+
+### Get by Id 5e2af6f88e5bf16222856529
+GET http://localhost:8626/calificacion/5f3de89cf6d133682847328f
