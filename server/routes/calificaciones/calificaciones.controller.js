@@ -37,11 +37,11 @@ function getById(req, res, next) {
         .catch(err => next(err));
 }
 
-function getByCode(req, res, next) {
+function getByCode(req, res) {
     console.log(req.params.value);
     calificacionesService.getByCode(req.params.key, req.params.value)
-        .then(calificaciones => calificaciones ? res.json(calificaciones) : res.sendStatus(404))
-        .catch(err => next(err));
+        .then(data => data ? res.json({data}) : res.sendStatus(404))
+        .catch(err => res.json({data: [], err}));
 }
 
 function update(req, res) {

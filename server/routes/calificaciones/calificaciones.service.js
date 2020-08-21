@@ -11,7 +11,8 @@ async function create(params) {
         codigo_centro: params.centro,
         codigo_curso: params.codigo_curso,
         codigo_periodo: params.codigo_periodo,
-        codigo_asignatura: params.codigo_asignatura
+        codigo_asignatura: params.codigo_asignatura,
+        estado: true
 
     })
 
@@ -30,11 +31,11 @@ async function create(params) {
 }
 
 async function getAll() {
-    return await ModelDB.find();
+    return await ModelDB.find({ estado: true });
 }
 
 async function getByCode(key, value) {
-    return await ModelDB.find({ [key]: value }).sort([['codigo_curso', -1]]);
+    return await ModelDB.find({ [key]: value, estado: true }).sort([['codigo_curso', -1]]);
 }
 
 
@@ -57,7 +58,8 @@ async function update(id, params) {
 }
 
 async function _delete(id) {
-    return await ModelDB.findByIdAndRemove(id);
+    const calificacion_valid = await getById(id);
+    return await update(id, { ...calificacion_valid, estado: false });
 }
 
 
