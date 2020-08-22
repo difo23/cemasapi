@@ -51,6 +51,7 @@ function update(req, res) {
 }
 
 function _delete(req, res, next) {
+console.log('Delete ', req.params.id);
     calificacionesService._delete(req.params.id)
         .then((calificacion) => res.json({ remove: calificacion ? true : false, calificacion }))
         .catch(err => next(err));

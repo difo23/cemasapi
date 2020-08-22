@@ -28,10 +28,18 @@ let calificacionesSchema = new Schema({
 	}],
 	codigo_calificacion: {
 		type: String, 
-		unique: true
+		
 	},
 
 	modalidad: {
+		type: String
+
+	},
+	ras: {
+		type: String
+
+	},
+	estudiantes: {
 		type: String
 
 	},

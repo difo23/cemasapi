@@ -1,0 +1,54 @@
+### Calificaciones API
+
+
+### Get by Id 5e2af6f88e5bf16222856529
+GET http://localhost:8626/calificacion/5f3de89cf6d133682847328f
+
+### Get all 
+
+GET http://localhost:8626/calificaciones
+
+
+### Post Create
+
+POST http://localhost:8626/calificaciones/create
+content-type: application/json
+
+{
+    "calificacion_estudiantes": [],
+    "codigo_calificacion":"5B:LENG005:ÁNGELAFELIZ-AMFH000:2019-2020:0-test",
+    "codigo_asignatura": "LENG005-test",
+    "codigo_curso": "5B-test",
+    "codigo_maestro": "ÁNGELA FELIZ-AMFH000",
+    "codigo_centro": "CEMAS",
+    "codigo_periodo": "2019-2020-test",
+    "estado": true,
+    "modalidad": "GENERAL"
+}
+
+
+### Get by code
+
+GET http://localhost:8626/calificacion/codigo_maestro/ÁNGELA%20FELIZ-AMFH000 HTTP/1.1
+content-type: application/json
+
+{
+    "calificacion_estudiantes": [],
+    "codigo_calificacion":"5B:LENG005:ÁNGELAFELIZ-AMFH000:2019-2020:0-test",
+    "codigo_asignatura": "LENG005-test",
+    "codigo_curso": "5B-test",
+    "codigo_maestro": "ÁNGELA FELIZ-AMFH000-update",
+    "codigo_centro": "CEMAS",
+    "codigo_periodo": "2019-2020-test",
+    "estado": true,
+    "modalidad": "GENERAL"
+}
+
+
+### Delete id 5f3de89cf6d133682847328f
+
+DELETE  http://localhost:8626/calificacion/5f3de89cf6d133682847328f HTTP/1.1
+
+
+### Get by Id 5e2af6f88e5bf16222856529
+GET http://localhost:8626/calificacion/5f3de89cf6d133682847328f

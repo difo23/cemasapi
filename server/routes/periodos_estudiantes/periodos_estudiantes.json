@@ -1,0 +1,19 @@
+{
+    "_id": "5db8733d3b931645ef442d88",
+    "codigo_periodo": "2019-2020",
+    "codigo_curso": "6A",
+    "fecha_inicio": "",
+    "fecha_fin": "",
+    "estudiantes_inscritos": [
+        {
+            "nombres": "Kismeyri",
+            "apellidos": "Arias Sanchez",
+            "rne": "KAS021211",
+            "numero": 1,
+            "sexo": "F",
+            "edad": 17
+        }
+    ],
+    "codigo_calificaciones": "6A:2019-2020",
+    "titular": "NURIS ALTAGRACIA TORIBIO-NATB000"
+}
