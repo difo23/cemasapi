@@ -14,8 +14,7 @@ app.delete('/curso/:id', _delete);
 function register(req, res) {
 
     cursosService.create(req.body)
-        .then(curso => res.json({
-            create: true,
+        .then(curso => res.status(201).json({
             curso,
             id: curso._id
         }))
