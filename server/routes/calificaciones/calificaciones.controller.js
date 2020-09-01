@@ -45,6 +45,7 @@ function getByCode(req, res) {
 }
 
 function update(req, res) {
+console.log('UPDATE ',req.params.id );
     calificacionesService.update(req.params.id, req.body)
         .then(calificacion => res.json({ update: true, calificacion }))
         .catch(err => res.json({ update: false, err }));

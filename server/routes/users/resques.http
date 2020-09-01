@@ -1,0 +1,16 @@
+### Get all 
+
+GET http://localhost:8626/calificaciones
+
+
+### Post Create
+
+POST http://localhost:8626/register
+content-type: application/json
+
+{
+    "username": "lizandro23difo@gmail.com",
+    "password":"rastafari23",
+    "estado": true
+}
+

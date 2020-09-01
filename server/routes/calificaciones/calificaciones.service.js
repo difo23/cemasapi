@@ -46,14 +46,17 @@ async function getById(id) {
 async function update(id, params) {
     const calificacion = await ModelDB.findById(id);
 
+	console.log('Calificacion', params)
+
     // no existe lo creo
     if (!calificacion) return create(params);
 
     // copy params properties to calificacion
     Object.assign(calificacion, params);
 
-    await calificacion.save();
-
+	const boletin = new ModelDB(calificacion);
+    await boletin.save();
+	console.log('Calificacion asigancion ', boletin)
     return calificacion;
 }
 

@@ -2,11 +2,11 @@
 const jwt = require('jsonwebtoken');
 const User = require('../../models/users');
 const bcrypt = require('bcryptjs');
- mongoose = require('mongoose');
+mongoose = require('mongoose');
 
 
 async function authenticate({ username, password }) {
-    const  secret  = "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+    const secret = "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
     const user = await User.findOne({ username });
     if (user && bcrypt.compareSync(password, user.hash)) {
         const token = jwt.sign({ sub: user.id }, secret);
@@ -31,13 +31,15 @@ async function create(userParam) {
         throw 'Username "' + userParam.username + '" is already taken';
     }
 
-    const user = new User(userParam);
+    const user = new User({ ...userParam, _id: mongoose.Types.ObjectId() });
+
+
 
     // hash password
     if (userParam.password) {
         user.hash = bcrypt.hashSync(userParam.password, 10);
     }
-	
+
     // save user
     await user.save();
 }
