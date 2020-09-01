@@ -3,28 +3,27 @@ mongoose = require('mongoose');
 
 async function create(params) {
     // validate
-    console.log('Calificacion: ')
+    console.log('Curso: ')
 
-    const calificacion_valid = await ModelDB.findOne({
-        codigo_centro: params.centro,
+    const curso_valid = await ModelDB.findOne({
+        codigo_centro: params.codigo_centro,
         codigo_curso: params.codigo_curso,
         codigo_periodo: params.codigo_periodo,
-        codigo_asignatura: params.codigo_asignatura,
         estado: true
 
     })
 
-    if (calificacion_valid) {
+    if (curso_valid) {
 
         throw new Error();
     }
 
-    const calificacion = new ModelDB({ ...params, _id: mongoose.Types.ObjectId() });
+    const curso = new ModelDB({ ...params, _id: mongoose.Types.ObjectId() });
 
-    // save calificacion
-    await calificacion.save();
-    console.log('Calificacion: ', calificacion)
-    return calificacion;
+    // save curso
+    await curso.save();
+    console.log('curso: ', curso);
+    return curso;
 
 }
 
@@ -42,22 +41,22 @@ async function getById(id) {
 }
 
 async function update(id, params) {
-    const calificacion = await ModelDB.findById(id);
+    const curso = await ModelDB.findById(id);
 
     // no existe lo creo
-    if (!calificacion) return create(params);
+    if (!curso) return create(params);
 
     // copy params properties to calificacion
-    Object.assign(calificacion, params);
+    Object.assign(curso, params);
 
-    await calificacion.save();
+    await curso.save();
 
-    return calificacion;
+    return curso;
 }
 
 async function _delete(id) {
-    const calificacion_valid = await getById(id);
-    return await update(id, { ...calificacion_valid, estado: false });
+    const curso_valid = await getById(id);
+    return await update(id, { ...curso_valid, estado: false });
 }
 
 

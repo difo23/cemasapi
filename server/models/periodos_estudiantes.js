@@ -7,15 +7,11 @@ let periodos_estudiantesSchema = new Schema({
 	codigo_curso: {
 		type: String
 	},
+	codigo_centro: {
+		type: String
+	},
 	codigo_periodo: {
 		type: String
-	},
-	fecha_inicio: {
-		type: String
-	},
-	fecha_fin: {
-		type: String
-
 	},
 	estudiantes_inscritos: [{
 		type: Map,
@@ -24,8 +20,15 @@ let periodos_estudiantesSchema = new Schema({
 	codigo_calificaciones: {
 		type: String
 	},
-	titular: {
+	codigo_titular: {
 		type: String
+	},
+	nombres_titular: {
+		type: String
+	},
+	estado: {
+		type: Boolean
+
 	}
 });
 
