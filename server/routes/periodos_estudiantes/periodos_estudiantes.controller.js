@@ -18,7 +18,7 @@ function register(req, res) {
             curso,
             id: curso._id
         }))
-        .catch(err => res.json({ create: false, err }));
+        .catch(err => res.json({ curso: null, err }));
 }
 
 function getAll(req, res, next) {
@@ -44,9 +44,10 @@ function getByCode(req, res) {
 }
 
 function update(req, res) {
+    console.log('Update curso')
     cursosService.update(req.params.id, req.body)
-        .then(curso => res.json({ update: true, curso }))
-        .catch(err => res.json({ update: false, err }));
+        .then(curso => res.status(200).json({ update: true, curso }))
+        .catch(err => { console.log(err)/*{res.status(204).json({ update: false, err }))}*/ });
 }
 
 function _delete(req, res, next) {

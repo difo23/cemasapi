@@ -32,7 +32,7 @@ async function getAll() {
 }
 
 async function getByCode(key, value) {
-    return await ModelDB.find({ [key]: value }).sort([['codigo_curso', -1]]);
+    return await ModelDB.find({ [key]: value, estado: true }).sort([['codigo_curso', -1]]);
 }
 
 
@@ -48,10 +48,13 @@ async function update(id, params) {
 
     // copy params properties to calificacion
     Object.assign(curso, params);
+    console.log('Update curso', curso)
 
-    await curso.save();
+    const curso_update = new ModelDB(curso);
 
-    return curso;
+    await curso_update.save();
+
+    return curso_update;
 }
 
 async function _delete(id) {
