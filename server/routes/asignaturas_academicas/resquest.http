@@ -1,0 +1,10 @@
+### Calificaciones API
+
+
+
+### Get all 
+
+GET http://localhost:8626/asignaturas_academicas
+
+
+

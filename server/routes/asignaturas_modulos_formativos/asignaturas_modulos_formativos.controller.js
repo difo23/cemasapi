@@ -28,7 +28,7 @@ function getAll(req, res, next) {
     asignaturas_tecnicasService.getAll()
         .then(asignaturas_tecnicas => res.json({
             count: asignaturas_tecnicas.length,
-            asignaturas_tecnicas
+            data: asignaturas_tecnicas
         }))
         .catch(err => next(err));
 }
