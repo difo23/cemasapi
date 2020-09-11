@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
 const _ = require('underscore');
-const Reportes = require('../models/reportes');
+const Reportes = require('../../models/reportes');
 const mongoose = require('mongoose');
-const ReporteObj = require('./reporte/ReporteObj');
-const Calificaciones = require('../models/calificaciones');
-const Cursos = require('../models/cursos');
-const Periodo_Est = require('../models/periodos_estudiantes');
+const ReporteObj = require('./ReporteObj');
+const Calificaciones = require('../../models/calificaciones');
+const Cursos = require('../../models/cursos');
+const Periodo_Est = require('../../models/periodos_estudiantes');
 const PromiseBlue = require('bluebird');
 
 PromiseBlue.promisifyAll(mongoose);
-//TODO: Reparar en la base de datos periodo estudiantes el campo codgio curso mal escrito
+
 
 app.get('/reportes/:curso/:periodo', (req, res) => {
 	var curso = req.params.curso;

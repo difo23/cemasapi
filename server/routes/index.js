@@ -13,10 +13,10 @@ app.use(require('./users/users.controller'));
 
 
 
+// TODO: Reporte service.
 
-
-app.use(require('./reportPDF'));
-app.use(require('./upload'));
+// app.use(require('./reporte/reportPDF'));
+// app.use(require('./reporte/upload'));
 
 
 module.exports = app;
