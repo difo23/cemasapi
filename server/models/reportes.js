@@ -6,19 +6,34 @@ let reportesSchema = new Schema({
 
 	_id: Schema.Types.ObjectId,
 
-    curso: {
+	curso: {
 		type: String
 	},
 	periodo: {
 		type: String
+	},
+	centro: {
+		type: String
+	},
+	codigo_titular: {
+		type: String
+
+	},
+	nombre_titular: {
+		type: String
+
 	},
 	numero_estudiante: {
 		type: String
 	},
 	nombre_estudiante: {
 		type: String
-    },
-    
+	},
+	rne: {
+		type: String
+		//unique: true
+	},
+
 	boletin: {
 		type: String
 
@@ -31,15 +46,8 @@ let reportesSchema = new Schema({
 		type: Map,
 		of: String
 	}],
-	rne: {
-		type: String
-		//unique: true
-	},
 
-	titular_codigo: {
-		type: String
 
-	},
 
 	estado: {
 		type: Boolean
@@ -47,4 +55,4 @@ let reportesSchema = new Schema({
 	}
 });
 
-module.exports = mongoose.model('reportes', reportesSchema );
+module.exports = mongoose.model('reportes', reportesSchema);

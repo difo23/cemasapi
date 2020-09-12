@@ -5,24 +5,30 @@ mongoose = require('mongoose');
 
 async function create(params) {
     // validate
-    console.log('reporte: ')
+    console.log('reportes: ')
 
-    const reporte_valid = await ModelDB.findOne({
-        codigo_centro: params.centro,
-        codigo_curso: params.codigo_curso,
-        codigo_periodo: params.codigo_periodo,
-        codigo_asignatura: params.codigo_asignatura,
+    const reportes_valid = await ModelDB.findOne({
+        centro: paramas.centro,
+        curso: params.curso,
+        titular: params.titular,
+        periodo: params.periodo,
         estado: true
 
     })
 
     if (reporte_valid) {
 
-        throw new Error();
+        // Existen reportes creados actualmente para ese curso y periodo
     }
 
-    const reporte = new ModelDB({ ...params, _id: mongoose.Types.ObjectId() });
 
+
+    //TODO: Crear reporte por estudiantes
+
+
+
+
+    const reporte = new ModelDB({ ...params, _id: mongoose.Types.ObjectId() });
     // save reporte
     await reporte.save();
     console.log('reporte: ', reporte)
@@ -46,7 +52,7 @@ async function getById(id) {
 async function update(id, params) {
     const reporte = await ModelDB.findById(id);
 
-	console.log('reporte', params)
+    console.log('reporte', params)
 
     // no existe lo creo
     if (!reporte) return create(params);
@@ -54,9 +60,9 @@ async function update(id, params) {
     // copy params properties to reporte
     Object.assign(reporte, params);
 
-	const boletin = new ModelDB(reporte);
+    const boletin = new ModelDB(reporte);
     await boletin.save();
-	console.log('reporte asigancion ', boletin)
+    console.log('reporte asigancion ', boletin)
     return reporte;
 }
 

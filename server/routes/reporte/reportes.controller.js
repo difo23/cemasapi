@@ -14,10 +14,9 @@ app.delete('/reporte/:id', _delete);
 function register(req, res) {
 
     reportesService.create(req.body)
-        .then(reporte => res.json({
+        .then(reportes => res.json({
             create: true,
-            reporte,
-            id: reporte._id
+            reportes
         }))
         .catch(err => res.json({ create: false, err }));
 }
