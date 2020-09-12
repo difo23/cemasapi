@@ -38,8 +38,8 @@ class ReporteObj {
 		// console.log('Crear modulos en estudiantes',estudiante)
 		let asignatura = {
 			codigo_asignatura: estudiante.codigo_asignatura,
-			acumulado: estudiante.calificaciones.get('acumulado') || '0',
-			total: estudiante.calificaciones.get('total') || '0'
+			acumulado: estudiante.calificaciones.get('cf').acumulado || '0',
+			total: estudiante.calificaciones.get('cf').total || '0'
 		};
 		this.modulos.push(asignatura);
 	}
