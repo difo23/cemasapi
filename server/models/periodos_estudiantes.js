@@ -23,7 +23,7 @@ let periodos_estudiantesSchema = new Schema({
 	codigo_titular: {
 		type: String
 	},
-	nombres_titular: {
+	nombre_titular: {
 		type: String
 	},
 	estado: {

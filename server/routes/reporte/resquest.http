@@ -1,0 +1,18 @@
+### Calificaciones API
+
+POST http://localhost:8626/reportes/create
+content-type: application/json
+
+{
+
+    "curso": "5B",
+    "titular": "ÁNGELA FELIZ-AMFH000",
+    "periodo": "2019-2020",
+    "estado": true
+}
+
+
+
+
+
+

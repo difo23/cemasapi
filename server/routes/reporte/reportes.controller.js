@@ -4,11 +4,11 @@ const app = express();
 
 // routes
 app.post('/reportes/create', register);
-app.get('/reportes', getAll);
-app.get('/reporte/:id', getById);
-app.get('/reporte/:key/:value', getByCode);
-app.put('/reporte/:id', update);
-app.delete('/reporte/:id', _delete);
+// app.get('/reportes', getAll);
+// app.get('/reporte/:id', getById);
+// app.get('/reporte/:key/:value', getByCode);
+// app.put('/reporte/:id', update);
+// app.delete('/reporte/:id', _delete);
 
 
 function register(req, res) {

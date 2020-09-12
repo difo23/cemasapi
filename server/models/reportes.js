@@ -12,9 +12,7 @@ let reportesSchema = new Schema({
 	periodo: {
 		type: String
 	},
-	centro: {
-		type: String
-	},
+	
 	codigo_titular: {
 		type: String
 
