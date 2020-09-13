@@ -1,4 +1,4 @@
-const ModelDB = require('../../models/asignaturas_modulos_formativos');
+const ModelDB = require('../../models/asignaturas_modulos');
 mongoose = require('mongoose');
 
 async function create(params) {

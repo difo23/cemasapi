@@ -1,5 +1,5 @@
 const express = require('express');
-const asignaturas_tecnicasService = require('./asignaturas_modulos_formativos.service');
+const asignaturas_tecnicasService = require('./asignaturas_modulos.service');
 const app = express();
 
 // routes

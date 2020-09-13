@@ -1,26 +1,80 @@
 const Reporte = require('../../models/reportes');
-const Curso = require('../../models/cursos');
 const Calificacion = require('../../models/calificaciones');
 const Periodo_Estudiante = require('../../models/periodos_estudiantes');
 const ReporteObj = require('./ReporteObj');
+const ReporteCreate = require('./reporte/ReporteCreatePDF');
+const fs = require('fs');
+
+
 
 mongoose = require('mongoose');
 
 async function create(params) {
-    // validate
 
     //Los reportes debende de las calificaciones y los estudiantes inscritros
-
-    await valid(params);
+    await clean(params);
     const reportes_estudiantes = await createReport(params);
     const reportes = await setCalificaciones(params, reportes_estudiantes);
 
     await Reporte.insertMany(reportes);
-
-
     return reportes_estudiantes;
 
 }
+
+
+async function pdf(params) {
+
+
+    //_id es el mismo del curso al cual pertenece el reporte.
+    const pathPDF = path.join(__dirname, `/reporte/pdf/${params._id}.pdf`);
+    const notImagePath = path.join(__dirname, '/reporte/pdf/test.jpeg');
+
+    if (fs.existsSync(pathPDF)) return pathPDF;
+
+    const reportes = await Reporte.find({
+
+        curso: params.curso,
+        codigo_titular: params.titular,
+        periodo: params.periodo,
+        estado: true
+
+    })
+
+    if (reportes.length <= 0) return notImagePath;
+
+
+    const pdf = new ReporteCreate(pathPDF);
+
+    reportes.forEach((reporte, i) => {
+
+        switch (i % 2) {
+            case 0:
+                pdf.reporte(reporte, 0);
+                break;
+
+            case 1:
+                pdf.reporte(reporte, 360);
+                pdf.addPage();
+
+        }
+
+    })
+
+    pdf.close();
+
+
+    if (fs.existsSync(pathPDF)) {
+        //res.sendFile(pathPDF);
+        return pathPDF;
+
+    } else {
+
+        //res.sendFile(notImagePath);
+        return notImagePath;
+    }
+
+}
+
 
 
 
@@ -61,7 +115,12 @@ async function _delete(id) {
 }
 
 
-async function valid(params) {
+async function clean(params) {
+
+    const pathPDF = path.join(__dirname, `/reporte/pdf/${params._id}.pdf`);
+
+    if (fs.existsSync(pathPDF)) fs.unlinkSync(pathPDF);
+
 
     const reportes_valid = await Reporte.find({
 

@@ -6,7 +6,7 @@ app.use(require('./periodos_estudiantes/periodos_estudiantes.controller'));
 
 app.use(require('./calificaciones/calificaciones.controller'));
 
-app.use(require('./asignaturas_modulos_formativos/asignaturas_modulos_formativos.controller'));
+app.use(require('./asignaturas_modulos/asignaturas_modulos.controller'));
 app.use(require('./asignaturas_academicas/asignaturas_academicas.controller'));
 app.use(require('./reporte/reportes.controller'));
 

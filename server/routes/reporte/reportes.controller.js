@@ -4,6 +4,8 @@ const app = express();
 
 // routes
 app.post('/reportes/create', register);
+app.post('/reporte/pdf', createPDF);
+
 // app.get('/reportes', getAll);
 // app.get('/reporte/:id', getById);
 // app.get('/reporte/:key/:value', getByCode);
@@ -21,40 +23,51 @@ function register(req, res) {
         .catch(err => res.json({ create: false, err }));
 }
 
-function getAll(req, res, next) {
-    reportesService.getAll()
-        .then(reportes => res.json({
-            count: reportes.length,
-            reportes
+function createPDF(req, res) {
+    reportesService.pdf(req.body)
+        .then(id => res.json({
+            create: true,
+            id
         }))
-        .catch(err => next(err));
+        .catch(err => res.json({ create: false, err }));
 }
 
-function getById(req, res, next) {
-    reportesService.getById(req.params.id)
-        .then(reporte => reporte ? res.json(reporte) : res.sendStatus(404))
-        .catch(err => next(err));
-}
 
-function getByCode(req, res) {
-    console.log(req.params.value);
-    reportesService.getByCode(req.params.key, req.params.value)
-        .then(data => data ? res.json({ data }) : res.sendStatus(404))
-        .catch(err => res.json({ data: [], err }));
-}
 
-function update(req, res) {
-    console.log('UPDATE ', req.params.id);
-    reportesService.update(req.params.id, req.body)
-        .then(reporte => res.json({ update: true, reporte }))
-        .catch(err => res.json({ update: false, err }));
-}
+// function getAll(req, res, next) {
+//     reportesService.getAll()
+//         .then(reportes => res.json({
+//             count: reportes.length,
+//             reportes
+//         }))
+//         .catch(err => next(err));
+// }
 
-function _delete(req, res, next) {
-    console.log('Delete ', req.params.id);
-    reportesService._delete(req.params.id)
-        .then((reporte) => res.json({ remove: reporte ? true : false, reporte }))
-        .catch(err => next(err));
-}
+// function getById(req, res, next) {
+//     reportesService.getById(req.params.id)
+//         .then(reporte => reporte ? res.json(reporte) : res.sendStatus(404))
+//         .catch(err => next(err));
+// }
+
+// function getByCode(req, res) {
+//     console.log(req.params.value);
+//     reportesService.getByCode(req.params.key, req.params.value)
+//         .then(data => data ? res.json({ data }) : res.sendStatus(404))
+//         .catch(err => res.json({ data: [], err }));
+// }
+
+// function update(req, res) {
+//     console.log('UPDATE ', req.params.id);
+//     reportesService.update(req.params.id, req.body)
+//         .then(reporte => res.json({ update: true, reporte }))
+//         .catch(err => res.json({ update: false, err }));
+// }
+
+// function _delete(req, res, next) {
+//     console.log('Delete ', req.params.id);
+//     reportesService._delete(req.params.id)
+//         .then((reporte) => res.json({ remove: reporte ? true : false, reporte }))
+//         .catch(err => next(err));
+// }
 
 module.exports = app;

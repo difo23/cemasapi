@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let asignaturas_modulos_formativosSchema = new Schema({
+let asignaturas_modulosSchema = new Schema({
 	_id: Schema.Types.ObjectId,
 	codigo_asignatura: {
 		type: String
@@ -38,4 +38,4 @@ let asignaturas_modulos_formativosSchema = new Schema({
 	}
 });
 
-module.exports = mongoose.model('asignaturas_modulos_formativos', asignaturas_modulos_formativosSchema);
+module.exports = mongoose.model('asignaturas_modulos', asignaturas_modulosSchema);
