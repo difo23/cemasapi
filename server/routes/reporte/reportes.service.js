@@ -90,7 +90,7 @@ async function createReport(params) {
 
     const estudiantes_titular = await Periodo_Estudiante.findOne(
         { codigo_curso: params.curso, codigo_periodo: params.periodo },
-        'estudiantes_inscritos nombres_titular',
+        'estudiantes_inscritos nombre_titular',
     )
 
     const reportes_estudiantes = []
