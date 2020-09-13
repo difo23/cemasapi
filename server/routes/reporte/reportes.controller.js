@@ -1,10 +1,10 @@
 const express = require('express');
 const reportesService = require('./reportes.service');
 const app = express();
-
+var fs = require('fs-extra');
 // routes
 app.post('/reportes/create', register);
-app.post('/reporte/pdf', createPDF);
+app.get('/reporte/pdf/:_id', createPDF);
 
 // app.get('/reportes', getAll);
 // app.get('/reporte/:id', getById);
@@ -24,12 +24,11 @@ function register(req, res) {
 }
 
 function createPDF(req, res) {
-    reportesService.pdf(req.body)
-        .then(id => res.json({
-            create: true,
-            id
-        }))
-        .catch(err => res.json({ create: false, err }));
+    reportesService.pdf(req.params._id)
+        .then(path => {
+            res.status(200).sendFile(path);
+        })
+
 }
 
 

@@ -26,12 +26,11 @@ class ReporteCreatePDF {
 	}
 
 	constructorFilas(filas) {
-		let rows = [];
-		filas = JSON.stringify(filas);
-		filas = JSON.parse(filas);
-		for (let fila of filas) {
-			rows.push(Object.values(fila));
-		}
+
+		const rows = filas.map((fila) => {
+			return Array.from(fila.values());
+		});
+
 		console.log('valores: Rows en constructor ', rows);
 		return rows;
 	}
@@ -44,25 +43,18 @@ class ReporteCreatePDF {
 		var mm = hoy.getMonth() + 1;
 		var yyyy = hoy.getFullYear();
 		var fecha = `${dd}-${mm}-${yyyy}`;
+
 		console.log('Empezamos a Crear el pdf para ', estudiante, ' Pagina ', this.count, ' Div', inicio);
+
 		let rows_asignaturas = this.constructorFilas(estudiante.asignaturas);
-		let rows_modulos = this.constructorFilas(estudiante.modulos);
-		let titular = estudiante.titular_codigo.split('-');
+		let titular = estudiante.nombre_titular;
 
 		const asignaturas_academicas = {
-			headers: [ 'Asignaturas', 'Ago-Sept-oct', 'Nov-Dic-Ene', 'Feb-Mar', 'Abr-May-Jun', 'CF' ],
+			headers: ['Asignaturas', 'Ago-Sept-oct', 'Nov-Dic-Ene', 'Feb-Mar', 'Abr-May-Jun', 'CF'],
 			rows: rows_asignaturas
 		};
-		if(estudiante.curso[0]*1 > 3){
-			const modulos_tecnicos = {
-				headers: [ 'Módulos', 'Acumulado', 'Total' ],
-				rows: rows_modulos
-		};}
 
-		const modulos_tecnicos = {
-			headers: [ 'Módulos', 'Acumulado', 'Total' ],
-			rows: rows_modulos
-		};
+
 
 		this.doc
 			.fontSize(12)
@@ -70,7 +62,7 @@ class ReporteCreatePDF {
 			.text('CENTRO EDUCATIVO MANUEL ACEVEDO SERRANO FE Y ALEGRÍA', 70, 30 + inicio)
 			.moveDown(0.5);
 
-		this.doc.image(path.join(__dirname, '/test.jpeg'), 490, 20 + inicio, { scale: 0.15 });
+		this.doc.image(path.join(__dirname, '/pdf/test.jpeg'), 490, 20 + inicio, { scale: 0.15 });
 
 		this.doc
 			.fontSize(10)
@@ -94,7 +86,7 @@ class ReporteCreatePDF {
 			.fontSize(8)
 			.font('Times-Roman')
 			.text(
-				`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${titular[0]}`,
+				`CURSO: ${estudiante.curso} | #: ${estudiante.numero_estudiante} | EST.: ${estudiante.nombre_estudiante.toUpperCase()} | PROF. TITULAR: ${titular.toUpperCase()}`,
 				70,
 				100 + inicio
 			)
@@ -102,13 +94,20 @@ class ReporteCreatePDF {
 
 		this.doc.table(asignaturas_academicas, 70, 115 + inicio, {});
 
-		if(estudiante.curso[0]*1 > 3){
+		if (estudiante.curso[0] * 1 > 3) {
+			let rows_modulos = this.constructorFilas(estudiante.modulos);
+			const modulos_tecnicos = {
+				headers: ['Módulos', 'Acumulado', 'Total'],
+				rows: rows_modulos
+			};
 			this.doc.moveDown().table(modulos_tecnicos, 70, 245 + inicio, { width: 300 });
 		}
+
+
 		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 150, 350 + inicio).moveDown(0.5);
 		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 250, 350 + inicio).moveDown(0.5);
 
-		this.doc.image(path.join(__dirname, '/director.jpeg'),  250, 320 + inicio, { scale: 0.05 });
+		this.doc.image(path.join(__dirname, '/director.jpeg'), 250, 320 + inicio, { scale: 0.05 });
 	}
 }
 

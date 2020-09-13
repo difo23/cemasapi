@@ -1,16 +1,24 @@
 ### Calificaciones API
+### 5B "5f5d6f09ae6e6a20d71c9a4d"
+
 
 POST http://localhost:8626/reportes/create
 content-type: application/json
 
 {
-
     "curso": "5B",
+    "_id":"5f5d6f09ae6e6a20d71c9a4d",
     "titular": "lizandro23difo@gmail.com",
-    "periodo": "2021-2022",
-    "estado": true
+    "periodo": "2021-2022"
+    
 }
 
+
+
+### PF
+
+
+GET http://localhost:8626/reporte/pdf/5f5d6f09ae6e6a20d71c9a4d
 
 
 

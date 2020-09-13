@@ -2,9 +2,9 @@ const Reporte = require('../../models/reportes');
 const Calificacion = require('../../models/calificaciones');
 const Periodo_Estudiante = require('../../models/periodos_estudiantes');
 const ReporteObj = require('./ReporteObj');
-const ReporteCreate = require('./reporte/ReporteCreatePDF');
+const ReporteCreate = require('./ReporteCreatePDF');
 const fs = require('fs');
-
+var path = require('path');
 
 
 mongoose = require('mongoose');
@@ -22,20 +22,25 @@ async function create(params) {
 }
 
 
-async function pdf(params) {
+async function pdf(id) {
 
+    console.log(id);
 
     //_id es el mismo del curso al cual pertenece el reporte.
-    const pathPDF = path.join(__dirname, `/reporte/pdf/${params._id}.pdf`);
-    const notImagePath = path.join(__dirname, '/reporte/pdf/test.jpeg');
+    const pathPDF = path.join(__dirname, `/pdf/${id}.pdf`);
+    const notImagePath = path.join(__dirname, '/pdf/test.webp');
+
+    console.log(pathPDF)
 
     if (fs.existsSync(pathPDF)) return pathPDF;
 
+    const periodo_estudiante = await Periodo_Estudiante.findById(id)
+
     const reportes = await Reporte.find({
 
-        curso: params.curso,
-        codigo_titular: params.titular,
-        periodo: params.periodo,
+        curso: periodo_estudiante.codigo_curso,
+        codigo_titular: periodo_estudiante.codigo_titular,
+        periodo: periodo_estudiante.codigo_periodo,
         estado: true
 
     })
@@ -44,6 +49,8 @@ async function pdf(params) {
 
 
     const pdf = new ReporteCreate(pathPDF);
+
+    // Hasta  aqui el error
 
     reportes.forEach((reporte, i) => {
 
@@ -55,10 +62,17 @@ async function pdf(params) {
             case 1:
                 pdf.reporte(reporte, 360);
                 pdf.addPage();
+                break;
+
+            default:
+                break
 
         }
 
     })
+
+
+
 
     pdf.close();
 
@@ -117,7 +131,7 @@ async function _delete(id) {
 
 async function clean(params) {
 
-    const pathPDF = path.join(__dirname, `/reporte/pdf/${params._id}.pdf`);
+    const pathPDF = path.join(__dirname, `/pdf/${params._id}.pdf`);
 
     if (fs.existsSync(pathPDF)) fs.unlinkSync(pathPDF);
 
@@ -222,5 +236,6 @@ module.exports = {
     getAll,
     getById,
     _delete,
-    getByCode
+    getByCode,
+    pdf
 };
