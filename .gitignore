@@ -4,4 +4,3 @@ node_modules
 /server/routes/reporte/pdf/*.pdf
 /public/uploads/*
 server/routes/reporte/pdf/5f5d6f09ae6e6a20d71c9a4d.pdf
-
