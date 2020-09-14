@@ -4,7 +4,7 @@
 
 ### Get all 
 
-GET http://localhost:8626/asignaturas_tecnicas
+GET  https://cemasapi.herokuapp.com/asignaturas_tecnicas
 
 
 
