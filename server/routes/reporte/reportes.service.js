@@ -162,7 +162,7 @@ async function clean(params) {
 async function createReport(params) {
 
     const estudiantes_titular = await Periodo_Estudiante.findOne(
-        { codigo_curso: params.curso, codigo_periodo: params.periodo },
+        { codigo_curso: params.curso, codigo_periodo: params.periodo, estado: true, codigo_titular: params.titular },
         'estudiantes_inscritos nombre_titular',
     )
 
@@ -193,7 +193,7 @@ async function createReport(params) {
 async function setCalificaciones(params, reportes_estudiantes) {
 
     const calificaciones_asignaturas = await Calificacion.find(
-        { codigo_curso: params.curso, codigo_periodo: params.periodo },
+        { codigo_curso: params.curso, codigo_periodo: params.periodo, estado: true, codigo_centro: params.centro },
         'codigo_asignatura calificacion_estudiantes'
     )
 
