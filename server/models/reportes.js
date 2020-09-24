@@ -12,7 +12,7 @@ let reportesSchema = new Schema({
 	periodo: {
 		type: String
 	},
-	
+
 	codigo_titular: {
 		type: String
 
@@ -29,7 +29,7 @@ let reportesSchema = new Schema({
 	},
 	rne: {
 		type: String
-		//unique: true
+		
 	},
 
 	boletin: {
