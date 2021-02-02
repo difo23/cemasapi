@@ -102,7 +102,7 @@ class ReporteCreatePDF {
 			};
 			this.doc.moveDown().table(modulos_tecnicos, 70, 245 + inicio, { width: 300 });
 		}
-		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 350, 350 + inicio).moveDown(0.5);
+		this.doc.fontSize(8).font('Times-Roman').text(` Titular`, 400, 350 + inicio).moveDown(0.5);
 		this.doc.fontSize(8).font('Times-Roman').text(` Director`, 450, 350 + inicio).moveDown(0.5);
 		this.doc.image(path.join(__dirname, '/director.jpeg'), 450, 320 + inicio, { scale: 0.05 });
 		/*
