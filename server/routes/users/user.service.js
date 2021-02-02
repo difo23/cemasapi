@@ -1,18 +1,17 @@
-﻿
-const jwt = require('jsonwebtoken');
-const User = require('../../models/users');
-const bcrypt = require('bcryptjs');
-mongoose = require('mongoose');
-
+﻿const jwt = require("jsonwebtoken");
+const User = require("../../models/users");
+const bcrypt = require("bcryptjs");
+mongoose = require("mongoose");
 
 async function authenticate({ username, password }) {
-    const secret = "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+    const secret =
+        "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING";
     const user = await User.findOne({ username });
     if (user && bcrypt.compareSync(password, user.hash)) {
         const token = jwt.sign({ sub: user.id }, secret);
         return {
             ...user.toJSON(),
-            token
+            token,
         };
     }
 }
@@ -31,16 +30,14 @@ async function create(userParam) {
         throw 'Username "' + userParam.username + '" is already taken';
     }
 
+    //TODO: Add the user state for confirm.
     const user = new User({ ...userParam, _id: mongoose.Types.ObjectId() });
-
-
 
     // hash password
     if (userParam.password) {
         user.hash = bcrypt.hashSync(userParam.password, 10);
     }
 
-    // save user
     await user.save();
 }
 
@@ -48,8 +45,12 @@ async function update(id, userParam) {
     const user = await User.findById(id);
 
     // validate
-    if (!user) throw 'User not found';
-    if (user.username !== userParam.username && await User.findOne({ username: userParam.username })) {
+    // save user
+    if (!user) throw "User not found";
+    if (
+        user.username !== userParam.username &&
+        (await User.findOne({ username: userParam.username }))
+    ) {
         throw 'Username "' + userParam.username + '" is already taken';
     }
 
@@ -68,12 +69,11 @@ async function _delete(id) {
     await User.findByIdAndRemove(id);
 }
 
-
 module.exports = {
     authenticate,
     getAll,
     getById,
     create,
     update,
-    delete: _delete
+    delete: _delete,
 };
