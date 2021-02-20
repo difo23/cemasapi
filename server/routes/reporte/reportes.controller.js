@@ -5,10 +5,11 @@ var fs = require('fs-extra');
 // routes
 app.post('/reportes/create', register);
 app.get('/reporte/pdf/:_id', createPDF);
+app.get('/reportes/:key/:value', getByCode);
 
-// app.get('/reportes', getAll);
+
+// app.get('/reportes/all', getAll);
 // app.get('/reporte/:id', getById);
-// app.get('/reporte/:key/:value', getByCode);
 // app.put('/reporte/:id', update);
 // app.delete('/reporte/:id', _delete);
 
@@ -48,12 +49,12 @@ function createPDF(req, res) {
 //         .catch(err => next(err));
 // }
 
-// function getByCode(req, res) {
-//     console.log(req.params.value);
-//     reportesService.getByCode(req.params.key, req.params.value)
-//         .then(data => data ? res.json({ data }) : res.sendStatus(404))
-//         .catch(err => res.json({ data: [], err }));
-// }
+function getByCode(req, res) {
+    console.log(req.params.value);
+    reportesService.getByCode(req.params.key, req.params.value)
+        .then(data => data ? res.json({ data }) : res.sendStatus(404))
+        .catch(err => res.json({ data: [], err }));
+}
 
 // function update(req, res) {
 //     console.log('UPDATE ', req.params.id);

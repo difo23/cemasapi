@@ -21,6 +21,12 @@ content-type: application/json
 GET http://localhost:8626/reporte/pdf/5f5d6f09ae6e6a20d71c9a4d
 
 
+### Get reportes
+
+
+GET http://localhost:8626/reportes/boletin/4A:2020-2021: HTTP/1.1
+content-type: application/json
+
 
 
 

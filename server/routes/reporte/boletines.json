@@ -1,0 +1,3223 @@
+{
+    "data": [
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4ce",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "1",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "MARLIN MARÍA ABREU  ROSARIO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "25",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 6
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": "0",
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4cf",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "2",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "LISYEL VALENTINA BALDERA GUZMÁN ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "86",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "84",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "83",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 21,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 16,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 17,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d0",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "3",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "EMELIZA ALTAGRACIA BURGOS REYNOSO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "84",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d1",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "4",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "YILIAN YORDELYS CASTILLO HERRERA ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "83",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "86",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 17,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d2",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "5",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": " HAIROLIS CONTRERAS ABREU ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "69",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 17
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "77",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "71",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 18
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "74",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "65",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 16
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 8,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 13,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 13,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 18,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d3",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "6",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "JOSÉ DAVID CRUCETA RODRÍGUEZ ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 17,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d4",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "7",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": " REYLIN  DÍAZ RUBIO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d5",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "8",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "BREDALYS FLORENTINO ABREU ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d6",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "9",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": " ASLHY GONZÁLEZ ROSARIO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d7",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "10",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "ALEXSA MARIE HERNÁNDEZ PEÑA ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "73",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 18
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "81",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d8",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "11",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "MARÍA YUNELY LANDETA MELÉNDEZ ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4d9",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "12",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "KARLA MARÍA LÓPEZ HENRÍQUEZ ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "81",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4da",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "13",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "LISSIE MARY MARTÍNEZ GARCÍA",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "81",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "75",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "86",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "68",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 17
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 20,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 7,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 9,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 17,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4db",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "14",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "LAURA ALTAGRACIA MONCIÓN",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "87",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "76",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "74",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "70",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 18
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 9,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 10,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4dc",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "15",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "MERY YORDALY OSORIA",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "87",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4dd",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "16",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "JUANA PATRICIA PEÑA ROSARIO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "72",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 18
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "81",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "73",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 18
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "74",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 6,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 16,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 14,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": "0",
+                    "total": "0"
+                }
+            ],
+            "_id": "6021428bb97d97001714c4de",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "17",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": " JHOSUELL PÉREZ BUENO",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "82",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "75",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "76",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "76",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 14,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 17,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4df",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "18",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "RANDY YUNIOR PIMENTEL LUNA ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "76",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "74",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 6,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 13,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 18,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 9,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e0",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "19",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "KATHERINE POLANCO GARCÍA",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "83",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "75",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "82",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 20,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 15,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e1",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "20",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "JOYCEE NICOL  RODRÍGUEZ ROMERO ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e2",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "21",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "YOJARIS MERCEDES RODRÍGUEZ VÁSQUEZ  ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "84",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 17,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 17,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e3",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "22",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "JESMÍN ELOISA ROMERO SÁNCHEZ ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "96",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e4",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "23",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "ELAINY ROSARIO ENCARNACIÓN ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "88",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e5",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "24",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "DOLIVER ALTAGRACIA SALAS PEÑA ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "100",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 20,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 25,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e6",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "25",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "YAREDI SALCEDO MERÁN ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "86",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "99",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "94",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "97",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "86",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e7",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "26",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": " MARLEN ALTAGRACIA SALDAÑA GARCÍA ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "90",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "92",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "98",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 25
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "91",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "85",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "95",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 24
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "93",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 23
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 20,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 19,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 24,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 18,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 23,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e8",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "27",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "YEFRICA ALTAGRACIA SÁNCHEZ FERNÁNDEZ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "58",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 15
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "87",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "74",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "82",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "89",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "89",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 22
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "82",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 21
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": 20,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": 16,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 16,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": 22,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4e9",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "28",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "JOHANNY DEL CARMEN SURIEL FERNÁNDEZ",
+            "__v": 0
+        },
+        {
+            "asignaturas": [
+                {
+                    "codigo_asignatura": "EDAR004",
+                    "ago_sept_oct": "77",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "MATE004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "EDFI004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "CSOC004",
+                    "ago_sept_oct": "78",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "CNAT004",
+                    "ago_sept_oct": "80",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 20
+                },
+                {
+                    "codigo_asignatura": "FIHR004",
+                    "ago_sept_oct": "0",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": "0"
+                },
+                {
+                    "codigo_asignatura": "LENG004",
+                    "ago_sept_oct": "75",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                },
+                {
+                    "codigo_asignatura": "LEX004",
+                    "ago_sept_oct": "75",
+                    "nov_dic_ene": "0",
+                    "feb_mar": "0",
+                    "abr_may_jun": "0",
+                    "cf": 19
+                }
+            ],
+            "modulos": [
+                {
+                    "codigo_asignatura": "MF3623_GDD",
+                    "acumulado": "0",
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3643_OAC",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF3663_GAT",
+                    "acumulado": 8,
+                    "total": 25
+                },
+                {
+                    "codigo_asignatura": "MF3673_GARH",
+                    "acumulado": 16,
+                    "total": 20
+                },
+                {
+                    "codigo_asignatura": "MF3613_CE",
+                    "acumulado": "0",
+                    "total": "0"
+                },
+                {
+                    "codigo_asignatura": "MF0023_OFIM",
+                    "acumulado": 10,
+                    "total": 10
+                }
+            ],
+            "_id": "6021428bb97d97001714c4ea",
+            "curso": "4A",
+            "periodo": "2020-2021",
+            "numero_estudiante": "29",
+            "rne": "",
+            "codigo_titular": "aideeloracemas@gmail.com",
+            "nombre_titular": "Aidée Gabriela Lora Morillo",
+            "estado": true,
+            "boletin": "4A:2020-2021:",
+            "nombre_estudiante": "ISAIL MERCEDES UREÑA PAULINO ",
+            "__v": 0
+        }
+    ]
+}
