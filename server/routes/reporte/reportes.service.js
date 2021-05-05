@@ -98,7 +98,9 @@ async function getAll() {
 }
 
 async function getByCode(key, value) {
-    return await Reporte.find({ [key]: value, estado: true }).sort([['codigo_curso', -1]]);
+    let [curso, periodo] = value.split(":");
+
+    return await Reporte.find({ [key]: { $regex: `${value}*` }, estado: true }).sort([['codigo_curso', -1]]);
 }
 
 
